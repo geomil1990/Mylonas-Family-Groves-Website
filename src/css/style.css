@@ -4,6 +4,7 @@
   --black-gray: #434343;
   --light-gray: #f0f0f0;
   --gold: #9e9d24;
+  --white: #ffffff;
   /* 
   --red: #bb0a01;
   --dark-red: #810600;
@@ -11,7 +12,7 @@
   --very-light-gray: #c5cfd3;
   --light-gray: #F0F0F0;
   
-  --white: #ffffff;*/
+  */
 }
 
 * {
@@ -91,6 +92,7 @@ nav li a:hover {
 /* Presentation of EVOO */
 #presentation-EVOO {
   background-color: var(--black-gray);
+  color: var(--white);
   width: 1920px;
   height: 1200px;
   display: flex;
@@ -98,6 +100,52 @@ nav li a:hover {
   align-items: center;
 }
 
-#limited-edition{
-  align-self: flex-end;
+#organic {
+  transform: rotate(270deg);
+  margin-right: -1.25em;
+}
+
+#presentation-EVOO > div:first-child {
+  font-size: 72px;
+}
+
+#right-text {
+  margin-left: 1em;
+  font-size: 24px;
+}
+
+#flex-limited-edition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#limited-edition {
+  margin-top: 1em;
+  font-size: 24px;
+}
+
+#flex-limited-edition div > img {
+  height: 500px;
+  border-radius: 500px;
+}
+
+#right-text {
+  width: 25%;
+  text-align: center;
+  font-size: 24px;
+}
+
+#right-text div h2 {
+  margin-bottom: 1em;
+}
+
+/* The Estates */
+#the-estates {
+  background-image: url(/Mylonas-Family-Groves-Website/src/img/the_estates_only.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1200px;
 }
