@@ -34,7 +34,7 @@ body {
 
 /*margin between navigaton bar items*/
 .nav-item {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-right: 3rem;
 }
 
@@ -55,8 +55,11 @@ nav li a:hover {
   margin-left: 5rem;
 }
 
-/* Welcome image */
+.logo {
+  height: 50px;
+}
 
+/* Welcome image */
 #welcome-message {
   background-image: url("/Mylonas-Family-Groves-Website/src/img/Welcome-1920b.gif");
   background-position: center;
@@ -83,4 +86,18 @@ nav li a:hover {
   margin-top: 2rem;
   font-size: 24px;
   color: #b4b5a0;
+}
+
+/* Presentation of EVOO */
+#presentation-EVOO {
+  background-color: var(--black-gray);
+  width: 1920px;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#limited-edition{
+  align-self: flex-end;
 }
