@@ -1,0 +1,86 @@
+/* CSS declare variables */
+:root {
+  --black: #212322;
+  --black-gray: #434343;
+  --light-gray: #f0f0f0;
+  --gold: #9e9d24;
+  /* 
+  --red: #bb0a01;
+  --dark-red: #810600;
+  --light-pink: #e4dadf;
+  --very-light-gray: #c5cfd3;
+  --light-gray: #F0F0F0;
+  
+  --white: #ffffff;*/
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* flex box for navigation bar */
+.flex-nav-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+/*margin between navigaton bar items*/
+.nav-item {
+  margin-top: 1.5rem;
+  margin-right: 3rem;
+}
+
+/* Navigation colour links */
+nav li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+
+nav li a:hover {
+  color: var(--gold);
+}
+
+/* Only the logo */
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 5rem;
+}
+
+/* Welcome image */
+
+#welcome-message {
+  background-image: url("/Mylonas-Family-Groves-Website/src/img/Welcome-1920b.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1920px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item {
+  font-family: "Montaga", serif;
+  font-weight: normal;
+}
+
+#welcome-message div h2 {
+  font-size: 56px;
+}
+
+#welcome-message div h3 {
+  margin-top: 2rem;
+  font-size: 24px;
+  color: #b4b5a0;
+}
