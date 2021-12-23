@@ -2,17 +2,10 @@
 :root {
   --black: #212322;
   --black-gray: #434343;
+  ---gray: #f3f3f3;
   --light-gray: #f0f0f0;
   --gold: #9e9d24;
   --white: #ffffff;
-  /* 
-  --red: #bb0a01;
-  --dark-red: #810600;
-  --light-pink: #e4dadf;
-  --very-light-gray: #c5cfd3;
-  --light-gray: #F0F0F0;
-  
-  */
 }
 
 * {
@@ -22,15 +15,19 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 24px;
 }
 
+/*---------------- Navigation Bar ----------------*/
+
 /* flex box for navigation bar */
-.flex-nav-list {
+.flex-list {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
   align-items: center;
   margin-right: 5rem;
+  font-size: 16px;
 }
 
 /*margin between navigaton bar items*/
@@ -40,18 +37,18 @@ body {
 }
 
 /* Navigation colour links */
-nav li a {
+.flex-list li a {
   text-decoration: none;
   color: var(--black);
   font-weight: bold;
 }
 
-nav li a:hover {
+.flex-list li a:hover {
   color: var(--gold);
 }
 
 /* Only the logo */
-.nav-item:first-child {
+nav ul .nav-item:first-child {
   margin-right: auto;
   margin-left: 5rem;
 }
@@ -60,8 +57,8 @@ nav li a:hover {
   height: 50px;
 }
 
-/* Welcome image */
-#welcome-message {
+/*---------------- Welcome image ----------------*/
+#welcome {
   background-image: url("/Mylonas-Family-Groves-Website/src/img/Welcome-1920b.gif");
   background-position: center;
   background-repeat: no-repeat;
@@ -72,6 +69,7 @@ nav li a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
 }
 
 .item {
@@ -79,17 +77,21 @@ nav li a:hover {
   font-weight: normal;
 }
 
-#welcome-message div h2 {
+#welcome-message {
+  margin-top: 5em;
+}
+
+#welcome-message h2 {
   font-size: 56px;
 }
 
-#welcome-message div h3 {
+#welcome-message h3 {
   margin-top: 2rem;
   font-size: 24px;
   color: #b4b5a0;
 }
 
-/* Presentation of EVOO */
+/*---------------- Presentation of EVOO ----------------*/
 #presentation-EVOO {
   background-color: var(--black-gray);
   color: var(--white);
@@ -137,15 +139,88 @@ nav li a:hover {
   font-size: 24px;
 }
 
-#right-text div h2 {
+#right-text div p {
   margin-bottom: 1em;
 }
 
-/* The Estates */
+/*---------------- The Estates ----------------*/
 #the-estates {
   background-image: url(/Mylonas-Family-Groves-Website/src/img/the_estates_only.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#the-estates-text {
+  max-width: 30%;
+  font-size: 24px;
+}
+
+#the-estates-text h2 {
+  margin-bottom: 1em;
+}
+
+/*---------------- Manifesto ----------------*/
+#manifesto {
+  background-color: var(--black-gray);
+  color: var(--white);
+  width: 1920px;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#manifesto div {
+  width: 30%;
+}
+
+#manifesto div img {
+  width: 600px;
+}
+
+#manifesto-test-right h2,
+p {
+  margin-bottom: 1em;
+}
+
+/*---------------- Quality Awards ----------------*/
+#quality-awards {
+  background-color: var(--gray);
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "content content content content content content"
+    "box-1 box-2 box-3 box-4 box-5 box-6";
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#quality-awards-header {
+  grid-area: header;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#quality-awards-content {
+  grid-area: content;
+}
+
+/*---------------- Footer ----------------*/
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  margin-top: 0.5em;
+  width: 60%;
+  border-color: var(--gold);
 }
