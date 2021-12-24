@@ -146,10 +146,10 @@ nav ul .nav-item:first-child {
 /*---------------- The Estates ----------------*/
 #the-estates {
   background-image: url(/Mylonas-Family-Groves-Website/src/img/the_estates_only.jpg);
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px;
+  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,7 +157,6 @@ nav ul .nav-item:first-child {
 
 #the-estates-text {
   max-width: 30%;
-  font-size: 24px;
 }
 
 #the-estates-text h2 {
@@ -345,4 +344,24 @@ hr {
   /*grid-area: image;*/
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+/*---------------- Our Land ----------------*/
+#backround-our-land h2 {
+  background-color: var(--gray);
+}
+
+#our-land {
+  background-image: url(/Mylonas-Family-Groves-Website/src/img/village_only.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+#our-land > p {
+  margin-top: 5%;
+  width: 50%;
 }
