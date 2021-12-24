@@ -32,7 +32,8 @@ body {
 
 /*margin between navigaton bar items*/
 .nav-item {
-  margin-top: 1rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
   margin-right: 3rem;
 }
 
@@ -56,7 +57,9 @@ nav ul .nav-item:first-child {
 .logo {
   height: 50px;
 }
+/*---------------- Navigation Bar End ----------------*/
 
+/*------------------------------------ Homepage ------------------------------------*/
 /*---------------- Welcome image ----------------*/
 #welcome {
   background-image: url("/Mylonas-Family-Groves-Website/src/img/Welcome-1920b.gif");
@@ -364,4 +367,17 @@ hr {
 #our-land > p {
   margin-top: 5%;
   width: 50%;
+}
+
+/*---------------- Meet Us ----------------*/
+#backround-meet-us h2 {
+  background-color: var(--gray);
+}
+
+#grid-meet-us {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
