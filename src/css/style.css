@@ -1,9 +1,9 @@
 /* CSS declare variables */
 :root {
-  --black: #212322;
+  --gray: #e2e2e2;
+  --dark-gray: #9b9b9b;
   --black-gray: #434343;
-  ---gray: #f3f3f3;
-  --light-gray: #f0f0f0;
+  --black: #212322;
   --gold: #9e9d24;
   --white: #ffffff;
 }
@@ -15,7 +15,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 /*---------------- Navigation Bar ----------------*/
@@ -190,7 +190,7 @@ p {
 
 /*---------------- Quality Awards ----------------*/
 #quality-awards {
-  background-color: var(--gray);
+  background-color: var(---gray);
   display: grid;
   grid-template-areas:
     "header header header header header header"
@@ -213,14 +213,136 @@ p {
 }
 
 /*---------------- Footer ----------------*/
-footer div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#grid-footer {
+  margin-left: 5em;
+  margin-right: 5em;
+  font-size: 16px;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-areas:
+    "our-groves your-evoo quality-awards logo quality-characteristics gallery contact"
+    "social-icon social-icon social-icon social-icon social-icon social-icon social-icon";
 }
+
+#our-groves-item {
+  grid-area: our-groves;
+}
+
+#your-evoo-item {
+  grid-area: your-evoo;
+}
+
+#quality-awards-item {
+  grid-area: quality-awards;
+}
+
+#logo-item {
+  grid-area: logo;
+}
+
+#quality-characteristics-item {
+  grid-area: quality-characteristics;
+}
+
+#gallery-item {
+  grid-area: gallery;
+}
+
+#contact-item {
+  grid-area: contact;
+}
+
+#social-icon-items {
+  grid-area: social-icon;
+}
+
+#grid-footer div {
+  margin-top: 10em;
+}
+
+#grid-footer div a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+
+#grid-footer div a:hover {
+  color: var(--gold);
+}
+
 hr {
   margin-top: 0.5em;
   width: 60%;
   border-color: var(--gold);
+}
+
+/*------------------------------------ About us ------------------------------------*/
+
+/*---------------- Our Family ----------------*/
+/* All headers at the top of a section */
+.padding-in-sections {
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.headers-specs {
+  width: 100%;
+  padding: 3vh;
+  text-align: center;
+}
+
+#backround-our-family h2 {
+  background-color: var(--gray);
+}
+
+#grid-our-family {
+  display: grid;
+  /*grid-template-areas: "text image ";*/
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid-our-family div:first-child {
+  /*grid-area: text;*/
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#grid-our-family div:last-child {
+  /*grid-area: image;*/
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/*---------------- Our Vision ----------------*/
+#backround-our-vision h2 {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+
+#grid-our-vision {
+  display: grid;
+  /*grid-template-areas: "text image ";*/
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-gray);
+  color: var(--white);
+}
+
+#grid-our-vision div:first-child {
+  /*grid-area: text;*/
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#grid-our-vision div:last-child {
+  /*grid-area: image;*/
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
