@@ -432,6 +432,7 @@ hr {
 .headers-specs {
   padding: 3vh;
   text-align: center;
+  font-size: 35px;
 }
 /*---------------- Our Family ----------------*/
 /* All headers at the top of a section */
@@ -582,3 +583,45 @@ hr {
   grid-row-end: 3;
   margin-right: 5em;
 }
+
+/*------------------------------------ Products ------------------------------------*/
+/*---------------- Your EVOO ----------------*/
+#your-evoo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+#your-evoo-flex {
+  width: 1920px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#natures-way {
+  margin-left: 2%;
+}
+
+/*---------------- Quality ----------------*/
+#quality div h2 {
+  position: relative;
+  color: var(--black);
+}
+
+#quality div h2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(/Mylonas-Family-Groves-Website/src/img/phenols.jfif);
+  background-position: center;
+  background-repeat: repeat;
+  opacity: 0.17;
+}
+
+/*---------------- Characteristics ----------------*/
