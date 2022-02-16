@@ -19,6 +19,8 @@ body {
   font-size: 18px;
 }
 
+/*/*---------------- Useful Classes /*----------------*/
+
 /*---------------- Navigation Bar ----------------*/
 
 /* flex box for navigation bar */
@@ -235,7 +237,7 @@ p {
 #quality-awards {
   background-color: var(--gray);
   width: 100%;
-  height: 70vh;
+  height: 50vh;
 }
 
 #quality-awards-grid-container {
@@ -375,8 +377,8 @@ footer {
   align-items: center;
   justify-content: center;
   grid-column-gap: 20px;
-  margin-top: 80px;
-  margin-bottom: 180px;
+  margin-top: 50px;
+  margin-bottom: 130px;
 }
 
 #social-icon-items a:nth-child(1) {
@@ -422,45 +424,61 @@ hr {
 }
 
 /*------------------------------------ About us ------------------------------------*/
-
-/*---------------- Our Family ----------------*/
-/* All headers at the top of a section */
-.padding-in-sections {
-  padding-left: 4em;
-  padding-right: 4em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+.padding-top-bottom {
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 
 .headers-specs {
-  width: 100%;
   padding: 3vh;
   text-align: center;
 }
-
-#backround-our-family h2 {
-  background-color: var(--gray);
+/*---------------- Our Family ----------------*/
+/* All headers at the top of a section */
+.margin-left-300px {
+  margin-left: 300px;
 }
 
-#grid-our-family {
+.margin-right-300px {
+  margin-right: 300px;
+}
+
+#backround-our-family-container {
   display: grid;
-  /*grid-template-areas: "text image ";*/
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  justify-content: center;
-  align-items: center;
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 80px;
 }
 
-#grid-our-family div:first-child {
-  /*grid-area: text;*/
+#backround-our-family-container div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: var(--gray);
+  justify-content: center;
+}
+
+#backround-our-family-container div:nth-child(2) {
   grid-column-start: 1;
   grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
-#grid-our-family div:last-child {
-  /*grid-area: image;*/
+#backround-our-family-container div:nth-child(3) {
   grid-column-start: 2;
   grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#backround-our-family-container div:nth-child(3) img {
+  /*   width: 600px;
+  height: 400px;
+  object-fit: cover; */
 }
 
 /*---------------- Our Vision ----------------*/
