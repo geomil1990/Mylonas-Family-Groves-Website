@@ -624,4 +624,47 @@ hr {
   opacity: 0.17;
 }
 
+#pooring-olive-oil {
+  background-image: url(/Mylonas-Family-Groves-Website/src/img/aceites_in_black.png);
+  /* Full height */
+  height: 80vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*---------------- Characteristics ----------------*/
+#characteristics div h2 {
+  position: relative;
+  color: var(--black);
+}
+
+#characteristics div h2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(/Mylonas-Family-Groves-Website/src/img/oil-drops-black.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  opacity: 0.17;
+}
+
+#characteristics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#characteristics-container > p{
+  margin-top: 40px;
+  text-align: center;
+  width: 40%;
+}
