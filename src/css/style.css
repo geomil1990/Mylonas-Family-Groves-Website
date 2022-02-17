@@ -704,3 +704,196 @@ hr {
   text-align: center;
   width: 40%;
 }
+/*---------------- From Our Groves to Your Table ----------------*/
+
+/*---------------- Gallery ----------------*/
+#gallery {
+  /* height: 85vh; */
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery-container {
+  /* height: 85vh; */
+  background-color: #240655;
+  width: 80%;
+  height: 70vh;
+  margin-top: 80px;
+  margin-bottom: 200px;
+  display: grid;
+}
+
+#gallery h2 {
+  background-color: var(--dark-gray);
+  color: var(--black);
+  width: 100%;
+}
+
+#lines-flex {
+  display: flex;
+  margin-top: 20px;
+}
+
+.vl {
+  border-left: 1px solid rgb(0, 0, 0);
+  height: 40px;
+  margin-left: 700px;
+}
+
+.v2 {
+  border-left: 1px solid rgb(0, 0, 0);
+  margin-left: 132px;
+}
+
+.v3 {
+  border-left: 1px solid rgb(0, 0, 0);
+  margin-left: 155px;
+}
+
+.v4 {
+  border-left: 1px solid rgb(0, 0, 0);
+  margin-left: 190px;
+}
+
+.line-2 {
+  border-top: 1px solid black;
+  width: 1920px;
+}
+
+.flex-list-gallery {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 80px;
+}
+
+.nav-item-gallery {
+  border-radius: 300px;
+}
+
+.margin-left-3em {
+  margin-left: 3em;
+}
+
+.margin-right-3em {
+  margin-right: 2rem;
+}
+
+.flex-list-gallery li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+  padding: 5px;
+  border: 3px solid var(--gray);
+}
+
+.flex-list-gallery li a:hover {
+  border: 3px solid var(--gold);
+  border-radius: 300px;
+  background-color: #f0f0d1;
+  transition: 0.15s;
+}
+
+/* Gallery's Photos*/
+
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#gallery-container .gallery-item {
+  background-color: #419e24;
+  border: 3px solid #24829e;
+}
+
+#gallery-container .gallery-item:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+#gallery-container .gallery-item img {
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+#gallery-container div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#gallery-container div:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#gallery-container div:nth-child(3) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#gallery-container div:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#gallery-container div:nth-child(5) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#gallery-container div:nth-child(6) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#gallery-container div:nth-child(7) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#gallery-container div:nth-child(8) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#gallery-container div:nth-child(9) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#gallery-container-popup {
+  background-color: #240655;
+  height: 30em;
+  width: 1000px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+/*   display: none; */
+    visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
