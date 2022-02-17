@@ -722,7 +722,7 @@ hr {
   width: 80%;
   height: 70vh;
   margin-top: 80px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   display: grid;
 }
 
@@ -887,13 +887,28 @@ hr {
 }
 
 #gallery-container-popup {
-  background-color: #240655;
+  background-color: #8c7da5;
   height: 30em;
   width: 1000px;
   margin-top: 50px;
   margin-bottom: 50px;
-/*   display: none; */
-    visibility: hidden;
+  /*   display: none; */
+  visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gallery-container-popup div img {
+  height: 5vh;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#gallery-image-popup {
+  background-color: #24829e;
+  width: 960px;
+  height: 500px;
 }
