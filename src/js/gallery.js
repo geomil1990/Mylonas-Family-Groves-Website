@@ -98,6 +98,9 @@ const pause = () => {
 const stop = () => {
   //clear Interval in order to stop the timer
   clearInterval(myInterval);
+  //change the image and the attribute alt of the pause button to play
+  playIcon.src = "../img/play-24px.png";
+  playIcon.alt = "play";
   //Show the first image
   currentImageID = 1;
   //get the element img from #gallery-image-popup
