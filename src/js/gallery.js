@@ -2,13 +2,17 @@ const images = [].slice.call(document.querySelectorAll(".gallery-item"));
 let currentImage;
 const arrowNext = document.getElementById("arrow-next");
 const arrowPrevious = document.getElementById("arrow-previous");
+const cancel = document.getElementById("cancel");
+const galleryPopUp = document.getElementById("gallery-container-popup");
+const gallery = document.getElementById("gallery-container");
 
 const showPhoto = (e) => {
   //Hide the gallery
-  e.path[1].style.display = "none";
+  gallery.style.display = "none";
+  console.log(gallery);
 
   //Display the popup Box at the center of the view
-  const galleryPopUp = document.getElementById("gallery-container-popup");
+
   /*  galleryPopUp.style.display = "block"; */
   galleryPopUp.style.visibility = "visible";
   galleryPopUp.style.opacity = "1";
@@ -27,7 +31,6 @@ const showPhoto = (e) => {
 
   //change the src of the image that is displayed with the selected one
   popUpImage.src = "../img/" + currentImageID + ".jpg";
-  console.log(popUpImage);
 };
 
 //Show Next Image
@@ -44,7 +47,8 @@ const pressNext = () => {
 
 //Show Previous Image
 const pressPrevious = () => {
-  --currentImageID;
+  if (currentImageID > 1) --currentImageID;
+  else currentImageID = 9;
   //get the element img from #gallery-image-popup
   popUpImage = document.querySelector("#gallery-image-popup img");
   //change the src of the image that is displayed with the selected one
@@ -53,6 +57,23 @@ const pressPrevious = () => {
   console.log("Previous");
 };
 
+//Cancel and return to the Gallery
+const goBack = () => {
+  //Hide the popup Box
+  galleryPopUp.style.visibility = "hidden";
+  galleryPopUp.style.opacity = "0";
+
+  //Display the gallery at the center of the view
+  /*  galleryPopUp.style.display = "block"; */
+  gallery.style.display = "grid";
+  gallery.scrollIntoView({
+    behavior: "auto",
+    block: "center",
+    inline: "center",
+  });
+};
+
 images.forEach((image) => image.addEventListener("click", showPhoto));
 arrowNext.addEventListener("click", pressNext);
 arrowPrevious.addEventListener("click", pressPrevious);
+cancel.addEventListener("click", goBack);

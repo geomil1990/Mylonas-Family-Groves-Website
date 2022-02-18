@@ -810,6 +810,7 @@ hr {
 #gallery-container .gallery-item {
   background-color: #419e24;
   border: 3px solid #24829e;
+  object-fit: cover;
 }
 
 #gallery-container .gallery-item:hover {
@@ -819,7 +820,8 @@ hr {
 }
 
 #gallery-container .gallery-item img {
-  object-fit: cover;
+  max-width: 50%;
+  object-fit: contain;
   border-radius: 2px;
 }
 
@@ -891,7 +893,7 @@ hr {
   height: 30em;
   width: 1000px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   /*   display: none; */
   visibility: hidden;
   opacity: 0;
@@ -903,12 +905,22 @@ hr {
 
 #gallery-container-popup div img {
   height: 5vh;
-  object-fit: cover;
   cursor: pointer;
+  object-fit: cover;
 }
 
 #gallery-image-popup {
   background-color: #24829e;
   width: 960px;
   height: 500px;
+}
+
+#arrow-previous img,
+#arrow-next img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#cancel {
+  margin-bottom: 40px;
 }
