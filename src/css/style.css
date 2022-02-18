@@ -815,7 +815,7 @@ hr {
 
 #gallery-container .gallery-item:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.5s;
 }
 
@@ -921,6 +921,16 @@ hr {
   object-fit: cover;
 }
 
-#cancel {
+#play-pause-cancel {
   margin-bottom: 40px;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#play,
+#pause,
+#cancel {
+  padding: 2px;
 }
