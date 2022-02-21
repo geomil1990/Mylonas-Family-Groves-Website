@@ -15,7 +15,7 @@ let myInterval;
 const showPhoto = (e) => {
   //Hide the gallery
   gallery.style.display = "none";
-  console.log(gallery);
+  /* console.log(gallery); */
   //Display the popup Box at the center of the view
   /*  galleryPopUp.style.display = "block"; */
   galleryPopUp.style.visibility = "visible";
@@ -25,16 +25,17 @@ const showPhoto = (e) => {
     block: "center",
     inline: "center",
   });
-
+  //Display cancel Button
+  ppcBtns.style.visibility = "visible";
   //------------------ Show the pressed image ------------------
   //get the element img from #gallery-image-popup
   popUpImage = document.querySelector("#gallery-image-popup img");
   //set currentImageID with the id of the selected image
-  currentImageID = e.target.querySelector("img").id;
+  /* currentImageID = e.target.querySelector("img").id; */
+  currentImageID = e.target.id;
+  console.log(currentImageID);
   //change the src of the image that is displayed with the selected one
   popUpImage.src = "../img/" + currentImageID + ".jpg";
-  //Display cancel Button
-  ppcBtns.style.visibility = "visible";
 };
 
 //Show Next Image
@@ -111,9 +112,8 @@ const stop = () => {
 
 //Cancel and return to the Gallery
 const goBack = () => {
-  //clear Interval in order to stop the timer
-  clearInterval(myInterval);
-  currentImageID = 0;
+  //call stop function
+  stop();
   //Hide the popup Box
   galleryPopUp.style.visibility = "hidden";
   galleryPopUp.style.opacity = "0";
