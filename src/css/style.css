@@ -373,9 +373,9 @@ footer {
   grid-template-areas: "facebook instagram youtube twitter";
   align-items: center;
   justify-content: center;
-  grid-column-gap: 20px;
-  margin-top: 50px;
-  margin-bottom: 130px;
+  grid-column-gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 #social-icon-items a:nth-child(1) {
@@ -395,13 +395,13 @@ footer {
 }
 
 #social-icon-items img {
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
   object-fit: cover;
 }
 
 #grid-footer div {
-  margin-top: 10em;
+  margin-top: 60px;
 }
 
 #grid-footer div a {
@@ -422,8 +422,8 @@ hr {
 
 /*------------------------------------ About us ------------------------------------*/
 .padding-top-bottom {
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .headers-specs {
