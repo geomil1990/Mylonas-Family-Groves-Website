@@ -109,33 +109,15 @@ nav ul .nav-item:first-child {
 
 /*---------------- Presentation of EVOO ----------------*/
 #presentation-EVOO {
-  background-color: var(--black-gray);
-  color: var(--white);
-  height: 100vh;
+  background-color: rgb(48, 47, 47);
+  height: 70vh;
+}
+
+#presentation-EVOO-container {
+  color: rgb(232, 235, 238);
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-#organic {
-  transform: rotate(270deg);
-  margin-right: -1.25em;
-  margin-left: 30%;
-  margin-bottom: 3%;
-}
-
-#presentation-EVOO > div:first-child {
-  font-size: 72px;
-}
-
-#right-text {
-  margin-left: 1.25em;
-  margin-right: 30%;
-  margin-bottom: 3%;
-}
-
-#right-text div p {
-  font-size: 18px;
+  height: 70vh;
 }
 
 #flex-limited-edition {
@@ -143,26 +125,41 @@ nav ul .nav-item:first-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#limited-edition {
-  margin-top: 1em;
-  font-size: 24px;
+  flex: 0 1 auto;
+  position: absolute; /* new */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #flex-limited-edition div > img {
-  height: 500px;
   border-radius: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+#flex-limited-edition div > p {
+  margin-top: 1em;
+}
+
+#organic {
+  transform: rotate(270deg);
+  font-size: 56px;
+  flex: 0 1 auto;
+  margin-left: 25%;
 }
 
 #right-text {
-  width: 25%;
+  width: 17%;
   text-align: center;
   font-size: 24px;
+  flex: 0 1 auto;
+  margin-left: auto;
+  margin-right: 17%;
 }
 
-#right-text div p {
+#right-text p {
   margin-bottom: 1em;
+  font-size: 18px;
 }
 /*---------------- Presentation of EVOO Responsive ----------------*/
 /* Responsive For Tablets*/
@@ -222,7 +219,7 @@ nav ul .nav-item:first-child {
 }
 
 #manifesto-test-right h2,
-p {
+#manifesto-test-right p {
   margin-bottom: 1em;
 }
 /*---------------- Manifesto Responsive ----------------*/
@@ -716,16 +713,6 @@ hr {
   justify-content: center;
 }
 
-#gallery-container {
-  /* height: 85vh; */
-  background-color: #240655;
-  width: 80%;
-  height: 70vh;
-  margin-top: 80px;
-  margin-bottom: 100px;
-  display: grid;
-}
-
 #gallery h2 {
   background-color: var(--dark-gray);
   color: var(--black);
@@ -799,18 +786,22 @@ hr {
   transition: 0.15s;
 }
 
-/* Gallery's Photos*/
+/*----------------- Gallery's Photos -----------------*/
 
 #gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  height: 75vh;
+  width: 70%;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  grid-gap: 0.3em;
 }
 
 #gallery-container .gallery-item {
-  background-color: #419e24;
-  border: 3px solid #24829e;
-  object-fit: cover;
+  /* background-color: #419e24; */
+  /* border: 3px solid var(--black-gray); */
 }
 
 #gallery-container .gallery-item:hover {
@@ -821,7 +812,8 @@ hr {
 
 #gallery-container .gallery-item img {
   width: 100%;
-  object-fit: contain;
+  height: 25vh;
+  object-fit: cover;
   border-radius: 2px;
 }
 
@@ -888,6 +880,8 @@ hr {
   grid-row-end: 4;
 }
 
+/*----------------- Gallery's Pop Up Box -----------------*/
+
 #gallery-container-popup {
   background-color: #8c7da5;
   height: 30em;
@@ -912,7 +906,7 @@ hr {
 #gallery-image-popup img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #arrow-previous img,
@@ -921,7 +915,6 @@ hr {
   object-fit: cover;
   height: 5vh;
   cursor: pointer;
-  object-fit: cover;
 }
 
 #play-pause-cancel {
