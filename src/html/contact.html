@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet" />
     <!-- Link CSS document -->
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- Link JS document -->
+    <script src="../js/weather.js" defer></script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -37,8 +39,26 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <div id="weather-box">
+        <div id="city-date">
+          <h3 id="Kyparissia"></h3>
+          <p id="date-time"></p>
+        </div>
+        <div id="weather-description-container">
+          <div>
+            <h4 id="live-temperature"></h4>
+            <p id="feels"></p>
+            <p id="humidity"></p>
+          </div>
 
-    <main></main>
+          <div id="description-icon-container">
+            <img src="../img/partly-cloudy-night.png" alt="" />
+            <p id="weather-description-text"></p>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Footer -->
     <footer>
       <div id="grid-footer">
