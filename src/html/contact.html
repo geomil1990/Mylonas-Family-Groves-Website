@@ -56,18 +56,21 @@
             <div class="field-item">
               <label for="last-name">Last name<span class="text-red">*</span></label>
               <input type="text" name="last-name" id="last-name" placeholder="Skywalker" autocomplete="on" />
+              <p id="check-last-name"></p>
             </div>
 
             <!-- Email address -->
             <div class="field-item">
               <label for="email">Email address<span class="text-red">*</span></label>
               <input type="email" name="email" id="email" autocomplete="on" />
+              <p id="check-email"></p>
             </div>
 
             <!-- Phone -->
             <div class="field-item">
               <label for="phone">Phone</label>
               <input type="text" name="phone" id="phone" placeholder="69********" autocomplete="on" />
+              <p id="check-phone"></p>
             </div>
 
             <!-- Textarea -->
@@ -80,6 +83,7 @@
                 cols="50"
                 rows="20"
                 placeholder="Type your message"
+                required
               ></textarea>
 
               <!-- Submit button -->

@@ -1116,7 +1116,7 @@ hr {
 
 /*---------------- Contact Us ----------------*/
 #contact-us {
-  height: 80vh;
+  height: 100vh;
 }
 
 .text-red {
@@ -1179,4 +1179,33 @@ textarea {
   cursor: pointer;
   background-color: var(--black-gray);
   color: var(--white);
+}
+
+/* Validation Form output errors*/
+#check-first-name {
+  margin: 0px;
+  color: red;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+}
+
+#check-last-name {
+  margin: 0px;
+  color: red;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+}
+
+#check-email {
+  margin: 0px;
+  color: red;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+}
+
+#check-phone {
+  margin: 0px;
+  color: red;
+  font-size: 0.75em;
+  margin-bottom: 1em;
 }
