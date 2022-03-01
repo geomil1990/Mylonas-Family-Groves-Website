@@ -1,11 +1,13 @@
 /* CSS declare variables */
 :root {
   --gray: #e2e2e2;
+  --light-gray: #929fa6;
   --dark-gray: #9b9b9b;
   --black-gray: #434343;
   --black: #212322;
   --gold: #9e9d24;
   --white: #ffffff;
+  --red: #bb0a01;
 }
 
 * {
@@ -1060,8 +1062,8 @@ hr {
 
 /*--------- Weather Api ---------*/
 #weather-box {
-  width: 400px;
-  height: 20vh;
+  width: 350px;
+  height: 18vh;
   background-color: #9787af;
   border-radius: 8px;
   color: var(--white);
@@ -1086,6 +1088,8 @@ hr {
   display: flex;
   flex-direction: column;
   float: right;
+  align-items: center;
+  justify-content: center;
 }
 
 #description-icon-container img {
@@ -1108,4 +1112,71 @@ hr {
 #feels,
 #humidity {
   font-size: 14px;
+}
+
+/*---------------- Contact Us ----------------*/
+#contact-us {
+  height: 80vh;
+}
+
+.text-red {
+  color: var(--red);
+}
+
+#contact-us {
+  margin-top: 5%;
+}
+
+#contact-us > div:first-child {
+  text-align: center;
+}
+
+#contact-form fieldset {
+  margin: 1% 25% 1% 25%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray);
+  padding: 50px 0px 50px 0px;
+  border-radius: 3px;
+}
+
+.field-item {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+}
+
+#contact-form .field-item label {
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+/* Trim the edges of the input tags and enlarge them */
+#contact-form .field-item input,
+#contact-form .field-item select {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 3px;
+}
+
+#submit-btn {
+  margin: 10px 0;
+  padding: 1rem;
+  font-size: 22px;
+  font-weight: bold;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--black-gray);
+  color: var(--white);
 }

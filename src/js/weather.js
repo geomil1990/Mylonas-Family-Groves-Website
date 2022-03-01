@@ -20,9 +20,10 @@ const generateWeather = () => {
         weatherDescription.innerHTML = data.currentConditions.conditions;
         dateTime.innerHTML = "Last update " + data.currentConditions.datetime;
         maxTemp.innerHTML = "Feels like: " + data.currentConditions.feelslike + "℃";
-        minTemp.innerHTML = "Humidity " + data.currentConditions.humidity;
-        weatherIcon.src = data.currentConditions.icon + ".png";
-        console.log(data);
+        minTemp.innerHTML = "Humidity: " + data.currentConditions.humidity + "%";
+        //Weather Icon
+        weatherIcon.src = "../img/" + data.currentConditions.icon + ".png";
+        console.log(data.currentConditions.icon);
       })
       .catch((error) => {
         console.log(error);
