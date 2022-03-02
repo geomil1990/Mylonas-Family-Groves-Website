@@ -16,14 +16,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- Link CSS document -->
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/burgerMenu.js" defer></script>
   </head>
   <body>
+    <div id="burger-icon"><img src="../img/insta_icon.png" alt=""></div>
     <!-- Navigation Bar -->
     <header>
-      <nav>
+      <nav id="navigation-bar">
         <ul class="flex-list">
           <li class="nav-item">
             <a href="index.html">
@@ -37,6 +40,11 @@
           <li class="nav-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- Simulate a smartphone / tablet -->
+      <div id="burger-menu">
+        <a id="logo-with-burger" href="index.html"> <img class="logo" src="../img/logo_only.png" alt="Logo" /></a>
+      </div>
     </header>
 
     <main>
