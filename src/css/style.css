@@ -272,6 +272,7 @@ footer {
   background-color: var(--white);
 }
 #grid-footer {
+  margin-top: 60px;
   margin-left: 5em;
   margin-right: 5em;
   font-size: 16px;
@@ -281,6 +282,16 @@ footer {
   align-items: center;
   justify-content: center;
   grid-column-gap: 100px;
+}
+
+#grid-footer div a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+
+#grid-footer div a:hover {
+  color: var(--gold);
 }
 
 #our-groves-item {
@@ -351,20 +362,6 @@ footer {
   width: 30px;
   height: 30px;
   object-fit: cover;
-}
-
-#grid-footer div {
-  margin-top: 60px;
-}
-
-#grid-footer div a {
-  text-decoration: none;
-  color: var(--black);
-  font-weight: bold;
-}
-
-#grid-footer div a:hover {
-  color: var(--gold);
 }
 
 hr {
@@ -1141,6 +1138,10 @@ textarea {
     grid-gap: 0em;
     grid-column-gap: 10px;
   }
+
+  #grid-footer {
+    margin-left: 5em;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1221,22 +1222,28 @@ textarea {
     margin-bottom: 4em;
   }
   #grid-footer {
+    margin-top: 30px;
     padding-left: 20%;
     padding-right: 20%;
     margin-left: 0em;
     margin-right: 0em;
-    font-size: 14px;
+    font-size: 16px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-    grid-gap: 0em;
+    grid-column-gap: 0em;
     grid-template-areas:
       "our-groves your-evoo quality-awards "
       "logo logo logo"
       "quality-characteristics gallery contact";
     align-items: center;
     justify-content: center;
-    grid-column-gap: 30px;
+    text-align: center;
+  }
+
+  #grid-footer > div {
+    margin: 30px 150px 0px 0px;
+    width: 100%;
   }
 
   @media only screen and (max-width: 480px) {
