@@ -97,7 +97,6 @@ nav ul .nav-item:first-child {
   font-size: 24px;
   color: #b4b5a0;
 }
-/*---------------- Welcome image Responsive ----------------*/
 
 /*---------------- Presentation of EVOO ----------------*/
 #presentation-EVOO {
@@ -172,13 +171,6 @@ nav ul .nav-item:first-child {
 
 #the-estates-text h2 {
   margin-bottom: 1em;
-}
-/*---------------- The Estates Responsive ----------------*/
-/* Responsive For Tablets*/
-@media only screen and (max-width: 768px) {
-}
-/* Responsive For Tablets*/
-@media only screen and (max-width: 480px) {
 }
 
 /*---------------- Manifesto ----------------*/
@@ -273,23 +265,6 @@ nav ul .nav-item:first-child {
 #box-6 {
   grid-area: box-6;
   background-color: #419e24;
-}
-/*---------------- Quality Awards Responsive ----------------*/
-/* Responsive For Tablets*/
-@media only screen and (max-width: 768px) {
-  #quality-awards {
-    grid-template-areas:
-      "header header header"
-      "header header header"
-      "content content content"
-      "content content content"
-      "box-1 box-2 box-3"
-      "box-4 box-5 box-6";
-  }
-}
-
-/* Responsive For Tablets*/
-@media only screen and (max-width: 480px) {
 }
 
 /*---------------- Footer ----------------*/
@@ -398,146 +373,6 @@ hr {
   border-color: var(--gold);
 }
 
-/*--------- Responsive for index.html /*---------
-/*----- Responsive for Laptops -----*/
-@media only screen and (max-width: 1536px) {
-  #organic {
-    margin-left: 20%;
-  }
-
-  #right-text {
-    margin-right: 15%;
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  #organic {
-    margin-left: 15%;
-  }
-
-  #right-text {
-    margin-right: 12%;
-  }
-}
-
-/* ----- Responsive for Tablets -----*/
-@media only screen and (max-width: 1280px) {
-  #organic {
-    margin-left: 15%;
-  }
-
-  #right-text {
-    margin-right: 12%;
-  }
-
-  #grid-footer {
-    font-size: 16px;
-    grid-gap: 0em;
-    grid-column-gap: 60px;
-  }
-
-  #social-icon-items {
-    grid-gap: 0em;
-    grid-column-gap: 10px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #presentation-EVOO-container {
-    color: rgb(232, 235, 238);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 70vh;
-  }
-
-  #flex-limited-edition {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15%;
-  }
-
-  #flex-limited-edition div > img {
-    border-radius: 500px;
-    height: 350px;
-    object-fit: cover;
-  }
-
-  #flex-limited-edition div > p {
-    font-size: 14px;
-    margin-top: 0.3em;
-    flex: 0 0 0;
-  }
-
-  #organic {
-    transform: rotate(0deg);
-    font-size: 56px;
-    margin-left: 0%;
-    margin-top: 3%;
-    flex: 0 0 0;
-  }
-
-  #right-text {
-    width: 70%;
-    text-align: center;
-    font-size: 24px;
-    margin-left: 0px;
-    margin-right: 0%;
-    margin-top: 57%;
-    margin-bottom: 3%;
-  }
-
-  #right-text p {
-    margin-bottom: 0.4em;
-    font-size: 16px;
-  }
-
-  #manifesto {
-    flex-direction: column;
-  }
-
-  #manifesto div {
-    width: 80%;
-  }
-
-  #manifesto div:first-child {
-    margin-right: 0px;
-  }
-
-  #manifesto div img {
-    width: 400px;
-  }
-
-  #manifesto-test-right p {
-    margin-bottom: 0.4em;
-    font-size: 16px;
-  }
-
-  #manifesto-test-right {
-    margin-bottom: 4em;
-  }
-  #grid-footer {
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-left: 0em;
-    margin-right: 0em;
-    font-size: 14px;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 0em;
-    grid-template-areas:
-      "our-groves your-evoo quality-awards "
-      "logo logo logo"
-      "quality-characteristics gallery contact";
-    align-items: center;
-    justify-content: center;
-    grid-column-gap: 30px;
-  }
-}
-
 /*------------------------------------ About us ------------------------------------*/
 .padding-top-bottom {
   padding-top: 70px;
@@ -551,13 +386,13 @@ hr {
 }
 /*---------------- Our Family ----------------*/
 /* All headers at the top of a section */
-.margin-left-300px {
+/* .margin-left-300px {
   margin-left: 300px;
 }
 
 .margin-right-300px {
   margin-right: 300px;
-}
+} */
 
 #backround-our-family-container {
   display: grid;
@@ -582,6 +417,7 @@ hr {
   grid-row-end: 3;
   font-size: 18px;
   margin-top: 20px;
+  margin-left: 300px;
 }
 
 #backround-our-family-container div:nth-child(3) {
@@ -589,12 +425,13 @@ hr {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  margin-right: 300px;
 }
 
 #backround-our-family-container div:nth-child(3) img {
-  /*   width: 600px;
+  width: 600px;
   height: 400px;
-  object-fit: cover; */
+  object-fit: cover;
 }
 
 /*---------------- Our Vision ----------------*/
@@ -616,11 +453,13 @@ hr {
 #grid-our-vision div:first-child {
   grid-column-start: 1;
   grid-column-end: 2;
+  margin-left: 300px;
 }
 
 #grid-our-vision div:last-child {
   grid-column-start: 2;
   grid-column-end: 3;
+  margin-right: 300px;
 }
 
 /*---------------- Our Land ----------------*/
@@ -646,6 +485,7 @@ hr {
 /*---------------- Meet Us ----------------*/
 #meets-us {
   background-color: var(--gray);
+  text-align: center;
 }
 
 #backround-meet-us h2 {
@@ -655,50 +495,42 @@ hr {
 #grid-meet-us {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-gap: 1rem;
   justify-content: center;
   align-items: center;
+  margin: 0px 10% 0px 13%;
 }
 
-/*  Header (Meet Us)  */
-#grid-meet-us div:first-child {
-  grid-column-start: 1;
-  grid-column-end: 5;
+#grid-meet-us > div p {
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+#grid-meet-us > div {
+  width: 75%;
 }
 
 /*  George  */
-#grid-meet-us div:nth-child(2) {
+#grid-meet-us div:nth-child(1) {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-left: 5em;
 }
 
 /*  Giouli  */
-#grid-meet-us div:nth-child(3) {
+#grid-meet-us div:nth-child(2) {
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 /*  Jim  */
-#grid-meet-us div:nth-child(4) {
+#grid-meet-us div:nth-child(3) {
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 /*  Sakis  */
-#grid-meet-us div:nth-child(5) {
+#grid-meet-us div:nth-child(4) {
   grid-column-start: 4;
   grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-right: 5em;
 }
 
 /*------------------------------------ Products ------------------------------------*/
@@ -1208,4 +1040,206 @@ textarea {
   color: red;
   font-size: 0.75em;
   margin-bottom: 1em;
+}
+
+/* Desktop Screen Resolutions 1536x864 , 1366x768*/
+/* Tablet  Screen Resolutions 1280x800 , 768x1024*/
+/* Mobile  Screen Resolutions 360x640*/
+
+/*------------- Responsive for Laptops -------------*/
+@media only screen and (max-width: 1536px) {
+  #organic {
+    margin-left: 20%;
+  }
+
+  #right-text {
+    margin-right: 15%;
+  }
+
+  #backround-our-family-container {
+    grid-column-gap: 70px;
+  }
+
+  #backround-our-family-container div:nth-child(2) {
+    margin-top: 70px;
+    margin-left: 100px;
+  }
+
+  #backround-our-family-container div:nth-child(3) {
+    margin-right: 100px;
+  }
+
+  #grid-our-vision {
+    grid-column-gap: 70px;
+  }
+
+  #grid-our-vision div:first-child {
+    margin-left: 100px;
+  }
+
+  #grid-our-vision div:last-child {
+    margin-right: 100px;
+  }
+
+  #grid-footer {
+    margin-left: 7em;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  /*------------- Responsive for index.html -------------*/
+  #organic {
+    margin-left: 15%;
+  }
+
+  #right-text {
+    margin-right: 12%;
+  }
+
+  #backround-our-family-container {
+    grid-column-gap: 60px;
+  }
+
+  #backround-our-family-container div:nth-child(2) {
+    margin-top: 40px;
+  }
+
+  #backround-our-family-container div:nth-child(3) {
+  }
+
+  #grid-our-vision {
+    grid-column-gap: 60px;
+  }
+
+  #grid-our-vision div:first-child {
+    margin-left: 100px;
+  }
+
+  #grid-our-vision div:last-child {
+    margin-right: 100px;
+  }
+}
+
+/* ----- Responsive for Tablets -----*/
+@media only screen and (max-width: 1280px) {
+  /*------------- Responsive for index.html -------------*/
+  #organic {
+    margin-left: 15%;
+  }
+
+  #right-text {
+    margin-right: 12%;
+  }
+
+  #grid-footer {
+    font-size: 16px;
+    grid-gap: 0em;
+    grid-column-gap: 60px;
+  }
+
+  #social-icon-items {
+    grid-gap: 0em;
+    grid-column-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /*------------- Responsive for index.html -------------*/
+  #presentation-EVOO-container {
+    color: rgb(232, 235, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+  }
+
+  #flex-limited-edition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  #flex-limited-edition div > img {
+    border-radius: 500px;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  #flex-limited-edition div > p {
+    font-size: 14px;
+    margin-top: 0.3em;
+    flex: 0 0 0;
+  }
+
+  #organic {
+    transform: rotate(0deg);
+    font-size: 56px;
+    margin-left: 0%;
+    margin-top: 3%;
+    flex: 0 0 0;
+  }
+
+  #right-text {
+    width: 70%;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 0px;
+    margin-right: 0%;
+    margin-top: 57%;
+    margin-bottom: 3%;
+  }
+
+  #right-text p {
+    margin-bottom: 0.4em;
+    font-size: 16px;
+  }
+
+  #manifesto {
+    flex-direction: column;
+  }
+
+  #manifesto div {
+    width: 80%;
+  }
+
+  #manifesto div:first-child {
+    margin-right: 0px;
+  }
+
+  #manifesto div img {
+    width: 400px;
+  }
+
+  #manifesto-test-right p {
+    margin-bottom: 0.4em;
+    font-size: 16px;
+  }
+
+  #manifesto-test-right {
+    margin-bottom: 4em;
+  }
+  #grid-footer {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-left: 0em;
+    margin-right: 0em;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 0em;
+    grid-template-areas:
+      "our-groves your-evoo quality-awards "
+      "logo logo logo"
+      "quality-characteristics gallery contact";
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 30px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    /*------------- Responsive for index.html -------------*/
+  }
 }
