@@ -457,14 +457,16 @@ hr {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #our-land > p {
-  margin-top: 5%;
-  width: 50%;
+  margin-top: 1%;
+  width: 30%;
 }
 
 /*---------------- Meet Us ----------------*/
@@ -1264,34 +1266,159 @@ textarea {
 
   #backround-our-family-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 80px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 40px;
     justify-content: center;
     align-items: center;
-  }
-
-  #header-our-family {
-    background-color: var(--gray);
+    height: 75vh;
   }
 
   #backround-our-family-container div:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 2;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-left: 300px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 15%;
+    width: 70%;
+    font-size: 16px;
+    margin-bottom: 0px;
   }
 
   #backround-our-family-container div:nth-child(2) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin-right: 300px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-left: 20%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    width: 60%;
+    object-fit: cover;
   }
 
   #backround-our-family-container div:nth-child(2) img {
-    width: 600px;
-    height: 400px;
+    width: 100%;
     object-fit: cover;
+  }
+
+  #grid-our-vision {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    height: 80vh;
+  }
+
+  #grid-our-vision div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    margin-left: 20%;
+  }
+
+  #grid-our-vision div:first-child img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  #grid-our-vision div:last-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-right: 0px;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 60px;
+    font-size: 16px;
+  }
+
+  #our-land {
+    background-image: url(/Mylonas-Family-Groves-Website/src/img/village_only.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 16px;
+  }
+
+  #our-land > p {
+    margin-top: 0%;
+    width: 35%;
+    padding: 15px;
+  }
+
+  #meets-us {
+    background-color: var(--gray);
+    text-align: center;
+  }
+
+  #backround-meet-us h2 {
+    background-color: var(--dark-gray);
+  }
+
+  #grid-meet-us {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10% 0px 13%;
+    grid-column-gap: 5px;
+  }
+
+  #grid-meet-us > div p {
+    margin-top: 3px;
+    font-size: 14px;
+  }
+
+  #grid-meet-us > div {
+    width: 95%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #grid-meet-us > div img {
+    width: 80%;
+    object-fit: cover;
+  }
+
+  /*  George  */
+  #grid-meet-us div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  /*  Giouli  */
+  #grid-meet-us div:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  /*  Jim  */
+  #grid-meet-us div:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  /*  Sakis  */
+  #grid-meet-us div:nth-child(4) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  #characteristics-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  #characteristics-container > p {
+    width: 80%;
   }
 }
 
