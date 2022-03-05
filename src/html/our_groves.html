@@ -22,14 +22,16 @@
     <link rel="stylesheet" type="text/css" href="http://w2ui.com/src/w2ui-1.4.2.min.css" />
   </head>
   <body>
+    <div id="burger-icon"><img src="../img/insta_icon.png" alt="" /></div>
     <!-- Navigation Bar -->
     <header>
-      <nav>
+      <nav id="navigation-bar">
         <ul class="flex-list">
           <li class="nav-item">
             <a href="index.html">
-              <img class="logo" src="/Mylonas-Family-Groves-Website/src/img/Mylonas_Logo_Final-2.png" alt="Logo"
-            /></a>
+              <img class="logo image1" src="/Mylonas-Family-Groves-Website/src/img/Mylonas_Logo_Final-2.png" alt="Logo" />
+              <img class="logo image" src="/Mylonas-Family-Groves-Website/src/img/logo_only.png" alt="Logo" />
+            </a>
           </li>
           <li class="nav-item"><a href="index.html">Home</a></li>
           <li class="nav-item"><a href="about.html">About</a></li>
@@ -38,6 +40,11 @@
           <li class="nav-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- Simulate a smartphone / tablet -->
+      <div id="burger-menu">
+        <a id="logo-with-burger" href="index.html"> <img class="logo" src="../img/logo_only.png" alt="Logo" /></a>
+      </div>
     </header>
 
     <main>

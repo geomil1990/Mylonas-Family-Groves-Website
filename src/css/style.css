@@ -35,6 +35,11 @@ body {
   font-size: 16px;
 }
 
+/* Hide the second logo (appeared only at max-width 768px) */
+.image2 {
+  display: none;
+}
+
 /*margin between navigaton bar items*/
 .nav-item {
   margin-top: 0.7rem;
@@ -1137,6 +1142,28 @@ textarea {
 
 @media only screen and (max-width: 768px) {
   /*------------- Responsive for index.html -------------*/
+  #welcome-message {
+    margin-top: 3em;
+  }
+
+  #welcome-message h3 {
+    margin-top: 2rem;
+    font-size: 24px;
+    color: #b4b5a0;
+  }
+
+  .flex-list {
+    margin-right: 1rem;
+  }
+
+  .image1 {
+    display: none;
+  }
+
+  .image2 {
+    display: block;
+  }
+
   #presentation-EVOO-container {
     color: rgb(232, 235, 238);
     display: flex;
@@ -1237,31 +1264,6 @@ textarea {
 
   #social-icon-items {
     margin-left: 70px;
-  }
-
-  #navigation-bar {
-    /* display: none; */
-  }
-
-  #burger-menu {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px 0px 0px;
-  }
-
-  #logo-with-burger {
-    text-align: center;
-  }
-  #welcome-message {
-    margin-top: 10px;
-  }
-
-  #burger-icon {
-    display: inline-flex;
-    background-color: rgb(211, 210, 210);
-    padding: 30px;
-    font-size: 20px;
-    border-radius: 5px;
   }
 
   #backround-our-family-container {
@@ -1425,6 +1427,28 @@ textarea {
 @media only screen and (max-width: 360px) {
   body {
     font-size: 16px;
+  }
+
+  #navigation-bar {
+    /* display: none; */
+  }
+
+  #burger-menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+  }
+
+  #logo-with-burger {
+    text-align: center;
+  }
+
+  #burger-icon {
+    display: inline-flex;
+    background-color: rgb(211, 210, 210);
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 5px;
   }
 
   #welcome-message {
