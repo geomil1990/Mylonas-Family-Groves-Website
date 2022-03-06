@@ -85,7 +85,7 @@ nav ul .nav-item:first-child {
 /*------------------------------------ Homepage ------------------------------------*/
 /*---------------- Welcome image ----------------*/
 #welcome {
-  background-image: url("/Mylonas-Family-Groves-Website/src/img/Welcome-1920b.gif");
+  background-image: url("/Mylonas-Family-Groves-Website/src/img/Milonas_land_illustration-04.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,6 +95,84 @@ nav ul .nav-item:first-child {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  position: relative;
+}
+
+#tree {
+  position: absolute;
+  right: 66%;
+  top: -5%;
+  height: 700px;
+  z-index: -1;
+}
+
+#clouds {
+  position: absolute;
+  right: -5%;
+  top: -5%;
+  height: 450px;
+  z-index: -1;
+}
+
+#olive {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  height: 450px;
+  z-index: -1;
+}
+
+#mill {
+  position: absolute;
+  right: 5%;
+  top: 46.2%;
+  height: 150px;
+  z-index: -1;
+}
+
+/* .cls-2mill {
+  -moz-transform: rotate(320deg);
+  -webkit-transform: rotate(320deg);
+  -o-transform: rotate(320deg);
+  -ms-transform: rotate(320deg);
+  animation: spin1 0.5s infinite linear;
+  -webkit-animation: spin1 2.5s infinite linear;
+}
+@keyframes spin1 {
+  0% {
+    -moz-transform: rotate(320deg);
+    -webkit-transform: rotate(320deg);
+    -o-transform: rotate(320deg);
+    -ms-transform: rotate(320deg);
+  }
+  100% {
+    -moz-transform: rotate(680deg);
+    -webkit-transform: rotate(680deg);
+    -o-transform: rotate(680deg);
+    -ms-transform: rotate(680deg);
+  }
+}
+@-webkit-keyframes spin1 {
+  0% {
+    -moz-transform: rotate(320deg);
+    -webkit-transform: rotate(320deg);
+    -o-transform: rotate(320deg);
+    -ms-transform: rotate(320deg);
+  }
+  100% {
+    -moz-transform: rotate(680deg);
+    -webkit-transform: rotate(680deg);
+    -o-transform: rotate(680deg);
+    -ms-transform: rotate(680deg);
+  }
+} */
+
+#woman {
+  position: absolute;
+  right: 69.1%;
+  top: 21.4%;
+  height: 320px;
+  z-index: 1;
 }
 
 .item {
