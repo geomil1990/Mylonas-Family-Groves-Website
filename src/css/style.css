@@ -8,6 +8,10 @@
   --gold: #9e9d24;
   --white: #ffffff;
   --red: #bb0a01;
+  --primary-color: #212322;
+  --secondary-color: #212322;
+  --overlay-color: #212322e8;
+  --menu-speed: 0.75s;
 }
 
 * {
@@ -71,6 +75,11 @@ nav ul .nav-item:first-child {
 #burger-icon {
   display: none;
 }
+
+.menu-wrap {
+  display: none;
+}
+
 /*---------------- Navigation Bar End ----------------*/
 
 /*------------------------------------ Homepage ------------------------------------*/
@@ -1430,25 +1439,144 @@ textarea {
   }
 
   #navigation-bar {
-    /* display: none; */
+    display: none;
   }
 
-  #burger-menu {
+  .menu-wrap {
+    display: inline;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  /*Place the toggler */
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+  /*Style the background for the burger */
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    background: var(--primary-color);
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 20px 0px 0px 0px;
+    border-radius: 3px;
   }
-
-  #logo-with-burger {
+  /*Create the middle line for burger */
+  .menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  /*Create the top & bot lines for burger */
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+  }
+  /* Place the bot line */
+  .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+  /*Toggler Animation*/
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  /* Create X lines*/
+  .menu-wrap .toggler:checked + .hamburger > div::before,
+  .menu-wrap .toggler:checked + .hamburger > div::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  /* Animate X lines when is toggler on*/
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+  /*hide Menu*/
+  .menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Grey overlay for menu */
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 300vw;
+    height: 300vw;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  /*Style the actual Menu*/
+  .menu-wrap .menu > div > div {
     text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
   }
-
-  #burger-icon {
-    display: inline-flex;
-    background-color: rgb(211, 210, 210);
-    padding: 30px;
-    font-size: 20px;
-    border-radius: 5px;
+  /*Style the li(s)*/
+  .menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  /*Style the a(s)*/
+  .menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+  .menu-wrap .menu > div > div > ul > li > a:hover {
+    color: var(--secondary-color);
+  }
+  /*Show Menu*/
+  .menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+  .menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+  }
+  .menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.7s;
   }
 
   #welcome-message {
@@ -1550,5 +1678,202 @@ textarea {
 
   #manifesto-test-right {
     margin-bottom: 15em;
+  }
+
+  #quality-awards {
+    background-color: var(--gray);
+    width: 100%;
+    height: 51vh;
+  }
+
+  #quality-awards-grid-container {
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: var(--black);
+    display: grid;
+    grid-column-gap: 15px;
+    grid-template-areas:
+      "header header header header header header" "content content content content content content"
+      "box-1 box-1 box-1 box-2 box-2 box-2"
+      "box-3 box-3 box-3 box-4 box-4 box-4" "box-5 box-5 box-5 box-6 box-6 box-6";
+  }
+
+  .item-award {
+    margin-bottom: 0px;
+    margin-top: 15px;
+    height: 50px;
+  }
+
+  #quality-awards-header {
+    grid-area: header;
+    justify-self: center;
+    margin-bottom: 15px;
+  }
+
+  #quality-awards-content {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  #grid-footer {
+    margin-top: 30px;
+    padding-left: 26%;
+    padding-right: 24%;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "our-groves your-evoo quality-awards "
+      "logo logo logo"
+      "quality-characteristics gallery contact";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #grid-footer > div {
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+  }
+
+  #social-icon-items {
+    margin-left: 70px;
+  }
+
+  #backround-our-family-container {
+    height: 100vh;
+  }
+
+  #backround-our-family-container div:nth-child(1) {
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  #backround-our-family-container div:nth-child(2) {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  #backround-our-family-container div:nth-child(2) img {
+    width: 100%;
+  }
+
+  #grid-our-vision {
+    grid-row-gap: 20px;
+    height: 100vh;
+  }
+
+  #grid-our-vision div:first-child {
+    width: 100%;
+    margin-left: 17%;
+  }
+
+  #grid-our-vision div:first-child img {
+    width: 70%;
+    object-fit: cover;
+  }
+
+  #grid-our-vision div:last-child {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 70px;
+  }
+
+  #our-land {
+    background-image: url(/Mylonas-Family-Groves-Website/src/img/village_only.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  #our-land > p {
+    margin-top: 0%;
+    width: 70%;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+
+  #grid-meet-us {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0px 10% 0px 13%;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #grid-meet-us > div p {
+    margin-top: 3px;
+    font-size: 14px;
+  }
+
+  #grid-meet-us > div {
+    width: 95%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  #grid-meet-us > div img {
+    width: 80%;
+    object-fit: cover;
+  }
+
+  /*  George  */
+  #grid-meet-us div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  /*  Giouli  */
+  #grid-meet-us div:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  /*  Jim  */
+  #grid-meet-us div:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  /*  Sakis  */
+  #grid-meet-us div:nth-child(4) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #characteristics-container img {
+    width: 90%;
+    object-fit: cover;
+  }
+
+  #contact-us {
+    height: 120vh;
+  }
+
+  #contact-form fieldset {
+    margin: 1% 15% 1% 15%;
+    width: 70%;
+  }
+
+  .field-item {
+    width: 80%;
   }
 }
