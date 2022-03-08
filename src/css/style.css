@@ -193,6 +193,102 @@ nav ul .nav-item:first-child {
   z-index: 1;
 }
 
+.cls-7woman {
+  animation-name: harvest;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 165px 200px;
+}
+
+@keyframes harvest {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.leaves {
+  animation-name: moving;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 3.4s;
+  animation-iteration-count: infinite;
+  transform-origin: 165px 200px;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(0.5%);
+  }
+  75% {
+    transform: translateX(-0.5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.nearleaves {
+  animation-name: nearmoving;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 3.4s;
+  animation-iteration-count: infinite;
+  transform-origin: 165px 200px;
+}
+
+@keyframes nearmoving {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(0.25%);
+  }
+  75% {
+    transform: translateX(-0.25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.secondaryleaves {
+  animation-name: secondarymoving;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 3.4s;
+  animation-iteration-count: infinite;
+  transform-origin: 165px 200px;
+}
+
+@keyframes secondarymoving {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(0.1%);
+  }
+  75% {
+    transform: translateX(-0.1%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 .item {
   font-family: "Montaga", serif;
   font-weight: normal;
