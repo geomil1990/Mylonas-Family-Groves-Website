@@ -130,6 +130,24 @@ nav ul .nav-item:first-child {
   z-index: -1;
 }
 
+.cls-2mill {
+  animation-name: spin;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 290.1px 234px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* .cls-2mill {
   -moz-transform: rotate(320deg);
   -webkit-transform: rotate(320deg);
