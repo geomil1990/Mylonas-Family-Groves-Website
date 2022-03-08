@@ -234,7 +234,7 @@ nav ul .nav-item:first-child {
     transform: translateX(0.5%);
   }
   75% {
-    transform: translateX(-0.5%);
+    transform: translateX(-0.1%);
   }
   100% {
     transform: translateX(0%);
@@ -255,10 +255,10 @@ nav ul .nav-item:first-child {
     transform: translateX(0%);
   }
   25% {
-    transform: translateX(0.25%);
+    transform: translateX(0.2%);
   }
   75% {
-    transform: translateX(-0.25%);
+    transform: translateX(-0.05%);
   }
   100% {
     transform: translateX(0%);
@@ -282,11 +282,112 @@ nav ul .nav-item:first-child {
     transform: translateX(0.1%);
   }
   75% {
-    transform: translateX(-0.1%);
+    transform: translateX(-0.03%);
   }
   100% {
     transform: translateX(0%);
   }
+}
+
+.small-olives {
+  width: 20px;
+  object-fit: cover;
+}
+
+#olive1 {
+  position: relative;
+  top: 590px;
+  left: 450px;
+}
+
+#olive2 {
+  position: relative;
+  top: 590px;
+  left: 390px;
+}
+
+#olive3 {
+  position: relative;
+  top: 590px;
+  left: 370px;
+}
+
+#olive4 {
+  position: relative;
+  top: 590px;
+  left: 330px;
+}
+
+#olive5 {
+  position: relative;
+  top: 590px;
+  left: 300px;
+}
+
+#olive6 {
+  position: relative;
+  top: 590px;
+  left: 310px;
+}
+
+#olive7 {
+  position: relative;
+  top: 590px;
+  left: 120px;
+}
+
+#olive8 {
+  position: relative;
+  top: 590px;
+  left: 140px;
+}
+
+#olive9 {
+  position: relative;
+  top: 590px;
+  left: 420px;
+}
+
+#olive10 {
+  position: relative;
+  top: 590px;
+  left: 220px;
+}
+
+#olive11 {
+  position: relative;
+  top: 590px;
+  left: 170px;
+}
+
+#olive12 {
+  position: relative;
+  top: 590px;
+  left: 100px;
+}
+
+#olive13 {
+  position: relative;
+  top: 590px;
+  left: 133px;
+}
+
+#olive14 {
+  position: relative;
+  top: 590px;
+  left: 80px;
+}
+
+#olive15 {
+  position: relative;
+  top: 590px;
+  left: 155px;
+}
+
+#olive16 {
+  position: relative;
+  top: 590px;
+  left: 195px;
 }
 
 .item {
