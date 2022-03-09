@@ -388,7 +388,7 @@ nav ul .nav-item:first-child {
 #welcome-message h2 {
   font-size: 56px;
   animation-name: headerdown;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in;
 }
 
@@ -412,7 +412,7 @@ nav ul .nav-item:first-child {
   font-size: 24px;
   color: #b4b5a0;
   animation-name: headerup;
-  animation-duration: 0.5s;
+  animation-duration: 0.75s;
   animation-timing-function: ease-in;
 }
 
@@ -486,11 +486,11 @@ nav ul .nav-item:first-child {
 
 @keyframes moveright {
   0% {
-    transform: translateX(-10%);
+    transform: translateX(-10%) rotate(270deg);
     opacity: 0;
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(0%) rotate(270deg);
     opacity: 1;
   }
 }
