@@ -148,43 +148,6 @@ nav ul .nav-item:first-child {
   }
 }
 
-/* .cls-2mill {
-  -moz-transform: rotate(320deg);
-  -webkit-transform: rotate(320deg);
-  -o-transform: rotate(320deg);
-  -ms-transform: rotate(320deg);
-  animation: spin1 0.5s infinite linear;
-  -webkit-animation: spin1 2.5s infinite linear;
-}
-@keyframes spin1 {
-  0% {
-    -moz-transform: rotate(320deg);
-    -webkit-transform: rotate(320deg);
-    -o-transform: rotate(320deg);
-    -ms-transform: rotate(320deg);
-  }
-  100% {
-    -moz-transform: rotate(680deg);
-    -webkit-transform: rotate(680deg);
-    -o-transform: rotate(680deg);
-    -ms-transform: rotate(680deg);
-  }
-}
-@-webkit-keyframes spin1 {
-  0% {
-    -moz-transform: rotate(320deg);
-    -webkit-transform: rotate(320deg);
-    -o-transform: rotate(320deg);
-    -ms-transform: rotate(320deg);
-  }
-  100% {
-    -moz-transform: rotate(680deg);
-    -webkit-transform: rotate(680deg);
-    -o-transform: rotate(680deg);
-    -ms-transform: rotate(680deg);
-  }
-} */
-
 #woman {
   position: absolute;
   right: 69.1%;
@@ -424,12 +387,130 @@ nav ul .nav-item:first-child {
 
 #welcome-message h2 {
   font-size: 56px;
+  animation-name: headerdown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes headerdown {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 #welcome-message h3 {
   margin-top: 2rem;
   font-size: 24px;
   color: #b4b5a0;
+  animation-name: headerup;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes headerup {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.move-down-class {
+  animation-name: movedown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-5%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-1%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.move-up-class {
+  animation-name: moveup;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveup {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(1%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.move-right-class {
+  animation-name: moveright;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveright {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.move-left-class {
+  animation-name: moveleft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveleft {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 /*---------------- Presentation of EVOO ----------------*/
@@ -460,6 +541,7 @@ nav ul .nav-item:first-child {
   border-radius: 500px;
   height: 500px;
   object-fit: cover;
+  opacity: 0;
 }
 
 #flex-limited-edition div > p {
@@ -471,6 +553,7 @@ nav ul .nav-item:first-child {
   font-size: 56px;
   flex: 0 1 auto;
   margin-left: 25%;
+  opacity: 0;
 }
 
 #right-text {
@@ -480,6 +563,7 @@ nav ul .nav-item:first-child {
   flex: 0 1 auto;
   margin-left: auto;
   margin-right: 17%;
+  opacity: 0;
 }
 
 #right-text > p {

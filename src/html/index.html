@@ -24,6 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="../js/animations.js" defer></script>
+    <script src="../js/scrollintoView.js" defer></script>
   </head>
   <body>
     <div id="burger-icon"><img src="../img/insta_icon.png" alt="" /></div>
@@ -1204,14 +1205,14 @@
       <!-- Presentation of EVOO -->
       <section id="presentation-EVOO">
         <div id="presentation-EVOO-container">
-          <div id="organic"><p>ORGANIC</p></div>
+          <div class="organic move-right-class" id="organic"><p>ORGANIC</p></div>
 
           <div id="flex-limited-edition">
-            <div><img src="../img/pidgeon.jpg" alt="" /></div>
-            <div id="limited-edition"><p>LIMITED EDITION</p></div>
+            <div><img class="limited-edition move-up-class"src="../img/pidgeon.jpg" alt="" /></div>
+            <div class="pidgeon move-down-class" id="limited-edition"><p>LIMITED EDITION</p></div>
           </div>
 
-          <div id="right-text">
+          <div class="right-text move-left-class" id="right-text">
             <p>PREMIUM QUALITY. RICH FLAVOUR. ULTRA HEALTHY.</p>
             <p>Organic Extra Virgin Olive Oil from a biodiverse estate in mountainous Messinia, Greece.</p>
           </div>
