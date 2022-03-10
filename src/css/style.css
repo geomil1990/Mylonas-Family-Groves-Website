@@ -96,6 +96,7 @@ nav ul .nav-item:first-child {
   align-items: center;
   text-align: center;
   position: relative;
+  overflow-x: hidden;
 }
 
 #tree {
@@ -383,6 +384,7 @@ nav ul .nav-item:first-child {
 
 #welcome-message {
   margin-top: 5em;
+  overflow-x: visible;
 }
 
 #welcome-message h2 {
@@ -390,6 +392,7 @@ nav ul .nav-item:first-child {
   animation-name: headerdown;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
+  overflow-x: visible;
 }
 
 @keyframes headerdown {
@@ -477,6 +480,24 @@ nav ul .nav-item:first-child {
   }
 }
 
+.move-right-img-class {
+  animation-name: moveImgRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveImgRight {
+  0% {
+    transform: translateX(-10%) rotate(270deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%) rotate(270deg);
+    opacity: 1;
+  }
+}
+
 .move-right-class {
   animation-name: moveright;
   animation-duration: 1s;
@@ -486,11 +507,11 @@ nav ul .nav-item:first-child {
 
 @keyframes moveright {
   0% {
-    transform: translateX(-10%) rotate(270deg);
+    transform: translateX(-10%);
     opacity: 0;
   }
   100% {
-    transform: translateX(0%) rotate(270deg);
+    transform: translateX(0%);
     opacity: 1;
   }
 }
@@ -609,8 +630,13 @@ nav ul .nav-item:first-child {
   margin-right: 100px;
 }
 
-#manifesto div img {
+#manifesto img {
   width: 600px;
+  opacity: 0;
+}
+
+#manifesto-test-right {
+  opacity: 0;
 }
 
 #manifesto-test-right h2,
@@ -648,41 +674,49 @@ nav ul .nav-item:first-child {
   grid-area: header;
   justify-self: center;
   margin-bottom: 50px;
+  opacity: 0;
 }
 
 #quality-awards-content {
   grid-area: content;
   justify-self: center;
+  opacity: 0;
 }
 
 #box-1 {
   grid-area: box-1;
   background-color: #770615;
+  opacity: 0;
 }
 
 #box-2 {
   grid-area: box-2;
   background-color: #9e9d24;
+  opacity: 0;
 }
 
 #box-3 {
   grid-area: box-3;
   background-color: #240655;
+  opacity: 0;
 }
 
 #box-4 {
   grid-area: box-4;
   background-color: #9e9d24;
+  opacity: 0;
 }
 
 #box-5 {
   grid-area: box-5;
   background-color: #24829e;
+  opacity: 0;
 }
 
 #box-6 {
   grid-area: box-6;
   background-color: #419e24;
+  opacity: 0;
 }
 
 /*---------------- Footer ----------------*/
@@ -2103,6 +2137,7 @@ textarea {
     margin-bottom: 0px;
     margin-top: 15px;
     height: 50px;
+    opacity: 0;
   }
 
   #quality-awards-header {
