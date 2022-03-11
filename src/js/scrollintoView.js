@@ -73,14 +73,15 @@
             addClass(elemTrigger[i], classToAdd);
           }
         }
-      } else {
+      } /* remove class when scrolling up
+        else {
         delClass(elemTrigger[i], classToAdd);
         if (!hasClass(elemTrigger[i], elemTarget)) {
           for (j = 0; j < elTargetLength; ++j) {
             delClass(elTarget[j], classToAdd);
           }
         }
-      }
+      } */
     }
   }
   // params:  trigger element, target element class, classes to add to target element, trigger element distance from top, unit ('percent' or 'pixels')
@@ -95,6 +96,7 @@
       elementFromTop(document.querySelectorAll("#presentation-EVOO"), "right-text", "move-left-class", 200, "pixels");
       elementFromTop(document.querySelectorAll("#manifesto"), "bird-manifesto", "move-right-class", 450, "pixels");
       elementFromTop(document.querySelectorAll("#manifesto"), "manifesto-text", "move-left-class", 450, "pixels");
+      elementFromTop(document.querySelectorAll("#the-estates"), "the-estates-txt", "move-down-class", 300, "pixels");
       elementFromTop(document.querySelectorAll("#quality-awards"), "quality-awards-header", "move-down-class", 800, "pixels");
       elementFromTop(document.querySelectorAll("#quality-awards"), "quality-awards-content", "move-down-class", 700, "pixels");
       elementFromTop(document.querySelectorAll("#quality-awards"), "item-award", "move-up-class", 500, "pixels");

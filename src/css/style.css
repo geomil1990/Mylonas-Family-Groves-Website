@@ -428,14 +428,14 @@ nav ul .nav-item:first-child {
   }
 }
 
-.move-down-class {
-  animation-name: movedown;
+.move-down-bounce-class {
+  animation-name: movedownbounce;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes movedown {
+@keyframes movedownbounce {
   0% {
     transform: translateY(-5%);
     opacity: 0;
@@ -447,6 +447,24 @@ nav ul .nav-item:first-child {
   75% {
     transform: translateY(-1%);
     opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.move-down-class {
+  animation-name: movedown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-8%);
+    opacity: 0;
   }
   100% {
     transform: translateY(0%);
@@ -598,7 +616,7 @@ nav ul .nav-item:first-child {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -606,6 +624,10 @@ nav ul .nav-item:first-child {
 
 #the-estates-text {
   max-width: 30%;
+  opacity: 0;
+  position: relative;
+  left: -15%;
+  top: -13%;
 }
 
 #the-estates-text h2 {
@@ -616,7 +638,7 @@ nav ul .nav-item:first-child {
 #manifesto {
   background-color: var(--black-gray);
   color: var(--white);
-  height: 70vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2077,14 +2099,6 @@ textarea {
   #right-text p {
     margin-bottom: 0.8em;
     font-size: 12px;
-  }
-
-  #the-estates-text {
-    max-width: 60%;
-  }
-
-  #the-estates-text h2 {
-    margin-bottom: 1em;
   }
 
   #manifesto {
