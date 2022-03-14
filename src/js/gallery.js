@@ -17,7 +17,7 @@ const showPhoto = (e) => {
   gallery.style.display = "none";
   /* console.log(gallery); */
   //Display the popup Box at the center of the view
-  /*  galleryPopUp.style.display = "block"; */
+  galleryPopUp.style.display = "flex";
   galleryPopUp.style.visibility = "visible";
   galleryPopUp.style.opacity = "1";
   galleryPopUp.scrollIntoView({
@@ -115,7 +115,7 @@ const goBack = () => {
   //call stop function
   stop();
   //Hide the popup Box
-  galleryPopUp.style.visibility = "hidden";
+  galleryPopUp.style.display = "none";
   galleryPopUp.style.opacity = "0";
   //Display the gallery at the center of the view
   /*  galleryPopUp.style.display = "block"; */

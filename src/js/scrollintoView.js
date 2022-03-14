@@ -100,6 +100,27 @@
       elementFromTop(document.querySelectorAll("#quality-awards"), "quality-awards-header", "move-down-class", 800, "pixels");
       elementFromTop(document.querySelectorAll("#quality-awards"), "quality-awards-content", "move-down-class", 700, "pixels");
       elementFromTop(document.querySelectorAll("#quality-awards"), "item-award", "move-up-class", 500, "pixels");
+      elementFromTop(document.querySelectorAll("#our-vision-id"), "human-wheel", "move-up-class", 300, "pixels");
+      elementFromTop(document.querySelectorAll("#our-vision-id"), "our-vision-txt", "move-up-class", 150, "pixels");
+      elementFromTop(document.querySelectorAll("#backround-our-land"), "our-land", "move-down-class", 200, "pixels");
+      elementFromTop(document.querySelectorAll("#meets-us"), "george", "move-right-george", 400, "pixels");
+      elementFromTop(document.querySelectorAll("#meets-us"), "giouli", "move-right-giouli", 400, "pixels");
+      elementFromTop(document.querySelectorAll("#meets-us"), "jim", "move-right-jim", 400, "pixels");
+      elementFromTop(document.querySelectorAll("#meets-us"), "sakis", "move-right-sakis", 400, "pixels");
+      elementFromTop(
+        document.querySelectorAll("#characteristics"),
+        "characteristics-text",
+        "move-right-characteristics-text",
+        100,
+        "pixels"
+      );
+      elementFromTop(
+        document.querySelectorAll("#characteristics"),
+        "characteristics-image",
+        "move-right-characteristics-image",
+        100,
+        "pixels"
+      );
 
       elementFromTop(document.querySelectorAll(".white"), "bg", "bg--white", 100, "percent"); // as top of element enters bottom of viewport
       elementFromTop(document.querySelectorAll("#trigger-1"), "flower-1", "grow", 0, "pixels");

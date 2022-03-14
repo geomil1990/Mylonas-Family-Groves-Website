@@ -481,16 +481,8 @@ nav ul .nav-item:first-child {
 
 @keyframes moveup {
   0% {
-    transform: translateY(5%);
+    transform: translateY(10%);
     opacity: 0;
-  }
-  50% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  75% {
-    transform: translateY(1%);
-    opacity: 1;
   }
   100% {
     transform: translateY(0%);
@@ -849,9 +841,10 @@ hr {
 }
 
 .headers-specs {
-  padding: 3vh;
+  padding: 4vh;
   text-align: center;
-  font-size: 35px;
+  font-size: 42px;
+  font-weight: 1000;
 }
 /*---------------- Our Family ----------------*/
 /* All headers at the top of a section */
@@ -881,12 +874,47 @@ hr {
   font-size: 18px;
   margin-left: 200px;
   margin-bottom: 30px;
+  animation-name: ourFamilyText;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes ourFamilyText {
+  0% {
+    transform: translateX(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 #backround-our-family-container div:nth-child(2) {
   grid-column-start: 2;
   grid-column-end: 3;
   margin-right: 200px;
+  animation-name: ourFamilyImage;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translate(0%, 0%);
+}
+
+@keyframes ourFamilyImage {
+  0% {
+    transform: translate(5%, 5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
 }
 
 /*---------------- Our Vision ----------------*/
@@ -909,12 +937,14 @@ hr {
   grid-column-start: 1;
   grid-column-end: 2;
   margin-left: 200px;
+  opacity: 0;
 }
 
 #grid-our-vision div:last-child {
   grid-column-start: 2;
   grid-column-end: 3;
   margin-right: 200px;
+  opacity: 0;
 }
 
 /*---------------- Our Land ----------------*/
@@ -937,6 +967,7 @@ hr {
 #our-land > p {
   margin-top: 1%;
   width: 30%;
+  opacity: 0;
 }
 
 /*---------------- Meet Us ----------------*/
@@ -955,6 +986,7 @@ hr {
   justify-content: center;
   align-items: center;
   margin: 0px 10% 0px 13%;
+  padding: 70px 0 70px 0;
 }
 
 #grid-meet-us > div p {
@@ -966,28 +998,107 @@ hr {
   width: 75%;
 }
 
+.move-right-george {
+  animation-name: moveRightGeorge;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes moveRightGeorge {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.move-right-giouli {
+  animation-name: moveRightGiouli;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes moveRightGiouli {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.move-right-jim {
+  animation-name: moveRightJim;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes moveRightJim {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.move-right-sakis {
+  animation-name: moveRightSakis;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveRightSakis {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 /*  George  */
 #grid-meet-us div:nth-child(1) {
   grid-column-start: 1;
   grid-column-end: 2;
+  opacity: 0;
 }
 
 /*  Giouli  */
 #grid-meet-us div:nth-child(2) {
   grid-column-start: 2;
   grid-column-end: 3;
+  opacity: 0;
 }
 
 /*  Jim  */
 #grid-meet-us div:nth-child(3) {
   grid-column-start: 3;
   grid-column-end: 4;
+  opacity: 0;
 }
 
 /*  Sakis  */
 #grid-meet-us div:nth-child(4) {
   grid-column-start: 4;
   grid-column-end: 5;
+  opacity: 0;
 }
 
 /*------------------------------------ Products ------------------------------------*/
@@ -1061,18 +1172,61 @@ hr {
 
 #characteristics-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: var(--gray);
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #characteristics-container > p {
   margin-top: 40px;
-  text-align: center;
-  width: 40%;
+  margin-right: 5%;
+  width: 25%;
+  opacity: 0;
+}
+
+#characteristics-container > img {
+  opacity: 0;
+}
+
+.move-right-characteristics-text {
+  animation-name: moveRightCharacteristicsText;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes moveRightCharacteristicsText {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.move-right-characteristics-image {
+  animation-name: moveRightCharacteristicsImage;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes moveRightCharacteristicsImage {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 /*------------------------------------ Our Groves ------------------------------------*/
@@ -1205,7 +1359,7 @@ hr {
   width: 70%;
   margin-top: 80px;
   margin-bottom: 100px;
-  grid-gap: 0.3em;
+  grid-column-gap: 0.3em;
 }
 
 #gallery-container .gallery-item {
@@ -1297,11 +1451,10 @@ hr {
   width: 1000px;
   margin-top: 50px;
   margin-bottom: 0px;
-  /*   display: none; */
+  display: none;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -1819,6 +1972,7 @@ textarea {
     margin-top: 0%;
     width: 35%;
     padding: 15px;
+    opacity: 0;
   }
 
   #meets-us {
@@ -1899,7 +2053,7 @@ textarea {
   }
 
   .menu-wrap {
-    display: inline;
+    display: block;
     position: fixed;
     top: 0;
     right: 0;
