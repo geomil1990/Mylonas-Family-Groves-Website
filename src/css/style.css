@@ -1663,6 +1663,118 @@ textarea {
 
 /*------------- Responsive for Laptops -------------*/
 @media only screen and (max-width: 1536px) {
+  #welcome {
+    background-image: url("/Mylonas-Family-Groves-Website/src/img/vector images/Milonas_land_illustration-01.png");
+  }
+
+  #tree {
+    display: none;
+  }
+
+  #clouds {
+    display: none;
+  }
+
+  #olive {
+    display: none;
+  }
+
+  #mill {
+    display: none;
+  }
+
+  .cls-2mill {
+    display: none;
+  }
+
+  #woman {
+    display: none;
+  }
+
+  .cls-7woman {
+    display: none;
+  }
+
+  .leaves {
+    display: none;
+  }
+
+  .nearleaves {
+    display: none;
+  }
+
+  .secondaryleaves {
+    display: none;
+  }
+
+  .small-olives {
+    display: none;
+  }
+
+  #olive1 {
+    display: none;
+  }
+
+  #olive2 {
+    display: none;
+  }
+
+  #olive3 {
+    display: none;
+  }
+
+  #olive4 {
+    display: none;
+  }
+
+  #olive5 {
+    display: none;
+  }
+
+  #olive6 {
+    display: none;
+  }
+
+  #olive7 {
+    display: none;
+  }
+
+  #olive8 {
+    display: none;
+  }
+
+  #olive9 {
+    display: none;
+  }
+
+  #olive10 {
+    display: none;
+  }
+
+  #olive11 {
+    display: none;
+  }
+
+  #olive12 {
+    display: none;
+  }
+
+  #olive13 {
+    display: none;
+  }
+
+  #olive14 {
+    display: none;
+  }
+
+  #olive15 {
+    display: none;
+  }
+
+  #olive16 {
+    display: none;
+  }
+
   #organic {
     margin-left: 20%;
   }
@@ -1698,6 +1810,7 @@ textarea {
 
 @media only screen and (max-width: 1366px) {
   /*------------- Responsive for index.html -------------*/
+
   #organic {
     margin-left: 15%;
   }
@@ -1740,6 +1853,7 @@ textarea {
 /* ----- Responsive for Tablets -----*/
 @media only screen and (max-width: 1280px) {
   /*------------- Responsive for index.html -------------*/
+
   #organic {
     margin-left: 15%;
   }
@@ -1760,6 +1874,151 @@ textarea {
 
 @media only screen and (max-width: 768px) {
   /*------------- Responsive for index.html -------------*/
+  body {
+    font-size: 16px;
+  }
+
+  #navigation-bar {
+    display: none;
+  }
+
+  .menu-wrap {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  /*Place the toggler */
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+  /*Style the background for the burger */
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+  }
+  /*Create the middle line for burger */
+  .menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  /*Create the top & bot lines for burger */
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+  }
+  /* Place the bot line */
+  .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+  /*Toggler Animation*/
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  /* Create X lines*/
+  .menu-wrap .toggler:checked + .hamburger > div::before,
+  .menu-wrap .toggler:checked + .hamburger > div::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  /* Animate X lines when is toggler on*/
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+  /*hide Menu*/
+  .menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Grey overlay for menu */
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 300vw;
+    height: 300vw;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  /*Style the actual Menu*/
+  .menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  /*Style the li(s)*/
+  .menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  /*Style the a(s)*/
+  .menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+  .menu-wrap .menu > div > div > ul > li > a:hover {
+    color: var(--secondary-color);
+  }
+  /*Show Menu*/
+  .menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+  .menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+  }
+  .menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.7s;
+  }
+
   #welcome-message {
     margin-top: 3em;
   }
@@ -2044,151 +2303,6 @@ textarea {
 }
 
 @media only screen and (max-width: 360px) {
-  body {
-    font-size: 16px;
-  }
-
-  #navigation-bar {
-    display: none;
-  }
-
-  .menu-wrap {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 2;
-  }
-  /*Place the toggler */
-  .menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 3;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-  }
-  /*Style the background for the burger */
-  .menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    width: 50px;
-    height: 50px;
-    padding: 1rem;
-    background: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-  }
-  /*Create the middle line for burger */
-  .menu-wrap .hamburger > div {
-    position: relative;
-    flex: none;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-  }
-  /*Create the top & bot lines for burger */
-  .menu-wrap .hamburger > div::before,
-  .menu-wrap .hamburger > div::after {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    top: -10px;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-  }
-  /* Place the bot line */
-  .menu-wrap .hamburger > div::after {
-    top: 10px;
-  }
-  /*Toggler Animation*/
-  .menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-  }
-  /* Create X lines*/
-  .menu-wrap .toggler:checked + .hamburger > div::before,
-  .menu-wrap .toggler:checked + .hamburger > div::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  /* Animate X lines when is toggler on*/
-  .menu-wrap .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-  }
-  /*hide Menu*/
-  .menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  /* Grey overlay for menu */
-  .menu-wrap .menu > div {
-    background: var(--overlay-color);
-    border-radius: 50%;
-    width: 300vw;
-    height: 300vw;
-    flex: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
-  }
-  /*Style the actual Menu*/
-  .menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
-  /*Style the li(s)*/
-  .menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-  /*Style the a(s)*/
-  .menu-wrap .menu > div > div > ul > li > a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.4s ease;
-  }
-  .menu-wrap .menu > div > div > ul > li > a:hover {
-    color: var(--secondary-color);
-  }
-  /*Show Menu*/
-  .menu-wrap .toggler:checked ~ .menu {
-    visibility: visible;
-  }
-  .menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: var(--menu-speed);
-  }
-  .menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 1;
-    transition: opacity 0.4s ease 0.7s;
-  }
-
   #welcome-message {
     margin-top: 3em;
   }
