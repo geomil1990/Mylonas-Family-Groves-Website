@@ -1,3 +1,39 @@
+/* table of contents
+  1.CSS declare variables
+  2.Navigation Bar
+  3.Homepage
+    3.1 Welcome image
+    3.2 Presentation of EVOO
+    3.3 The Estates
+    3.4 Manifesto
+    3.5 Quality Awards
+  4.Footer
+  5.About Us
+    5.1 Our Family
+    5.2 Our Vision
+    5.3 Our Land
+    5.4 Meet Us
+  6.Products
+    6.1 Your EVOO
+    6.2 Quality
+    6.3 Characteristics
+  7.Our Groves
+    7.1 From Our Groves to Your Table
+    7.2 Gallery
+      7.2.1 Gallery's Photos
+      7.2.2 Gallery's Pop Up Box
+  8.Contact Us
+  9.Weather API
+  10.Responsive for Laptops
+    10.1 Play the animation only in 1920px
+    10.2 max-width:1536px
+    10.3 max-width:1366px
+  11.Responsive for Tablets
+    11.1 max-width:1280px
+    11.2 max-width:768px
+  12.Responsive for Smartphones 360px
+*/
+
 /* CSS declare variables */
 :root {
   --gray: #e2e2e2;
@@ -24,8 +60,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
-
-/*/*---------------- Useful Classes /*----------------*/
 
 /*---------------- Navigation Bar ----------------*/
 
@@ -1230,7 +1264,7 @@ hr {
 }
 
 /*------------------------------------ Our Groves ------------------------------------*/
-/*---------------- Our Groves ----------------*/
+/*---------------- From Our Groves to Your Table ----------------*/
 #our-groves div h2 {
   position: relative;
   color: var(--black);
@@ -1264,7 +1298,6 @@ hr {
   text-align: center;
   width: 40%;
 }
-/*---------------- From Our Groves to Your Table ----------------*/
 
 /*---------------- Gallery ----------------*/
 #gallery {
@@ -1502,60 +1535,6 @@ hr {
   padding: 2px;
 }
 
-/*--------- Weather Api ---------*/
-#weather-box {
-  width: 350px;
-  height: 18vh;
-  background-color: #9787af;
-  border-radius: 8px;
-  color: var(--white);
-}
-
-#city-date {
-  border-radius: 8px 8px 0px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #24829e;
-}
-
-#weather-description-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#description-icon-container {
-  display: flex;
-  flex-direction: column;
-  float: right;
-  align-items: center;
-  justify-content: center;
-}
-
-#description-icon-container img {
-  width: 100px;
-  object-fit: cover;
-}
-
-#date-time {
-  font-size: 14px;
-}
-
-#weather-description-text {
-  font-size: 14px;
-}
-
-#live-temperature {
-  font-size: 55px;
-}
-
-#feels,
-#humidity {
-  font-size: 14px;
-}
-
 /*---------------- Contact Us ----------------*/
 #contact-us {
   height: 100vh;
@@ -1652,6 +1631,60 @@ textarea {
   margin-bottom: 1em;
 }
 
+/*--------- Weather Api ---------*/
+#weather-box {
+  width: 350px;
+  height: 18vh;
+  background-color: #9787af;
+  border-radius: 8px;
+  color: var(--white);
+}
+
+#city-date {
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #24829e;
+}
+
+#weather-description-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#description-icon-container {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  align-items: center;
+  justify-content: center;
+}
+
+#description-icon-container img {
+  width: 100px;
+  object-fit: cover;
+}
+
+#date-time {
+  font-size: 14px;
+}
+
+#weather-description-text {
+  font-size: 14px;
+}
+
+#live-temperature {
+  font-size: 55px;
+}
+
+#feels,
+#humidity {
+  font-size: 14px;
+}
+
 /* Desktop Screen Resolutions 1536x864 , 1366x768*/
 /* Tablet  Screen Resolutions 1280x800 , 768x1024*/
 /* Mobile  Screen Resolutions 360x640*/
@@ -1662,119 +1695,51 @@ textarea {
 }
 
 /*------------- Responsive for Laptops -------------*/
-@media only screen and (max-width: 1536px) {
+/* Play the animation only in 1920px*/
+@media only screen and (max-width: 1919px) {
   #welcome {
     background-image: url("/Mylonas-Family-Groves-Website/src/img/vector images/Milonas_land_illustration-01.png");
   }
 
-  #tree {
-    display: none;
-  }
-
-  #clouds {
-    display: none;
-  }
-
-  #olive {
-    display: none;
-  }
-
-  #mill {
-    display: none;
-  }
-
-  .cls-2mill {
-    display: none;
-  }
-
-  #woman {
-    display: none;
-  }
-
-  .cls-7woman {
-    display: none;
-  }
-
-  .leaves {
-    display: none;
-  }
-
-  .nearleaves {
-    display: none;
-  }
-
-  .secondaryleaves {
-    display: none;
-  }
-
-  .small-olives {
-    display: none;
-  }
-
-  #olive1 {
-    display: none;
-  }
-
-  #olive2 {
-    display: none;
-  }
-
-  #olive3 {
-    display: none;
-  }
-
-  #olive4 {
-    display: none;
-  }
-
-  #olive5 {
-    display: none;
-  }
-
-  #olive6 {
-    display: none;
-  }
-
-  #olive7 {
-    display: none;
-  }
-
-  #olive8 {
-    display: none;
-  }
-
-  #olive9 {
-    display: none;
-  }
-
-  #olive10 {
-    display: none;
-  }
-
-  #olive11 {
-    display: none;
-  }
-
-  #olive12 {
-    display: none;
-  }
-
-  #olive13 {
-    display: none;
-  }
-
-  #olive14 {
-    display: none;
-  }
-
-  #olive15 {
-    display: none;
-  }
-
+  #tree,
+  #clouds,
+  #olive,
+  #mill,
+  .cls-2mill,
+  #woman,
+  #tree,
+  #clouds,
+  #olive,
+  #mill,
+  .cls-2mill,
+  #woman,
+  .cls-7woman,
+  .leaves,
+  .nearleaves,
+  .secondaryleaves,
+  .small-olives,
+  #olive1,
+  #olive2,
+  #olive3,
+  #olive4,
+  #olive5,
+  #olive6,
+  #olive7,
+  #olive8,
+  #olive9,
+  #olive10,
+  #olive11,
+  #olive12,
+  #olive13,
+  #olive14,
+  #olive15,
   #olive16 {
     display: none;
   }
+}
 
+/* max-width:1536px */
+@media only screen and (max-width: 1536px) {
   #organic {
     margin-left: 20%;
   }
@@ -1808,9 +1773,8 @@ textarea {
   }
 }
 
+/* max-width:1366px */
 @media only screen and (max-width: 1366px) {
-  /*------------- Responsive for index.html -------------*/
-
   #organic {
     margin-left: 15%;
   }
@@ -1852,8 +1816,6 @@ textarea {
 
 /* ----- Responsive for Tablets -----*/
 @media only screen and (max-width: 1280px) {
-  /*------------- Responsive for index.html -------------*/
-
   #organic {
     margin-left: 15%;
   }
@@ -1873,7 +1835,6 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
-  /*------------- Responsive for index.html -------------*/
   body {
     font-size: 16px;
   }
@@ -2302,6 +2263,7 @@ textarea {
   }
 }
 
+/* Responsive for Smartphones */
 @media only screen and (max-width: 360px) {
   #welcome-message {
     margin-top: 3em;
