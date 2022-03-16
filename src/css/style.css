@@ -524,24 +524,6 @@ nav ul .nav-item:first-child {
   }
 }
 
-.move-right-img-class {
-  animation-name: moveImgRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes moveImgRight {
-  0% {
-    transform: translateX(-10%) rotate(270deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0%) rotate(270deg);
-    opacity: 1;
-  }
-}
-
 .move-right-class {
   animation-name: moveright;
   animation-duration: 1s;
@@ -604,9 +586,27 @@ nav ul .nav-item:first-child {
 
 #flex-limited-edition div > img {
   border-radius: 500px;
-  height: 500px;
+  height: 50vh;
   object-fit: cover;
   opacity: 0;
+}
+
+.move-right-img-class {
+  animation-name: moveImgRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveImgRight {
+  0% {
+    transform: translateX(-10%) rotate(270deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%) rotate(270deg);
+    opacity: 1;
+  }
 }
 
 #flex-limited-edition div > p {
@@ -638,22 +638,22 @@ nav ul .nav-item:first-child {
 
 /*---------------- The Estates ----------------*/
 #the-estates {
-  background-image: url(/Mylonas-Family-Groves-Website/src/img/the_estates_only.jpg);
+  background-image: url(/Mylonas-Family-Groves-Website/src/img/car.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #the-estates-text {
-  max-width: 30%;
+  max-width: 25%;
   opacity: 0;
   position: relative;
-  left: -15%;
-  top: -13%;
+  left: 7%;
+  top: -25%;
 }
 
 #the-estates-text h2 {
@@ -679,7 +679,7 @@ nav ul .nav-item:first-child {
 }
 
 #manifesto img {
-  width: 600px;
+  width: 60vh;
   opacity: 0;
 }
 
@@ -1145,7 +1145,7 @@ hr {
 }
 
 #your-evoo-flex {
-  width: 1920px;
+  width: 100vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -2020,7 +2020,7 @@ textarea {
 
   #flex-limited-edition div > img {
     border-radius: 500px;
-    height: 350px;
+    height: 40vh;
     object-fit: cover;
   }
 
@@ -2032,25 +2032,36 @@ textarea {
 
   #organic {
     transform: rotate(0deg);
-    font-size: 56px;
+    font-size: 42px;
     margin-left: 0%;
     margin-top: 3%;
     flex: 0 0 0;
   }
 
+  @keyframes moveImgRight {
+    0% {
+      transform: translateX(-10%) rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
   #right-text {
     width: 70%;
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
     margin-left: 0px;
     margin-right: 0%;
-    margin-top: 57%;
-    margin-bottom: 3%;
+    margin-top: 380px;
+    margin-bottom: 2%;
   }
 
   #right-text p {
     margin-bottom: 0.4em;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   #manifesto {
@@ -2298,7 +2309,7 @@ textarea {
 
   #flex-limited-edition div > img {
     border-radius: 500px;
-    height: 200px;
+    height: 25vh;
     object-fit: cover;
     margin-top: 4em;
   }
@@ -2554,5 +2565,70 @@ textarea {
 
   .field-item {
     width: 80%;
+  }
+}
+
+/* Vertical media query*/
+@media (max-height: 700px) {
+  #welcome {
+    min-height: 120vh;
+  }
+
+  #presentation-EVOO {
+    min-height: 80vh;
+  }
+
+  #presentation-EVOO-container {
+    min-height: 70vh;
+  }
+
+  #flex-limited-edition div > img {
+    min-height: 50vh;
+  }
+
+  #the-estates {
+    min-height: 120vh;
+  }
+
+  #manifesto {
+    min-height: 80vh;
+  }
+
+  #quality-awards {
+    min-height: 60vh;
+  }
+
+  .item-award {
+    min-height: 50px;
+  }
+
+  footer {
+    background-color: var(--white);
+  }
+
+  #backround-our-family-container {
+    min-height: 80vh;
+  }
+
+  #backround-our-family-container div:nth-child(2) img {
+    width: 85vh;
+    object-fit: cover;
+  }
+
+  #our-land {
+    min-height: 130vh;
+  }
+
+  .characteristics-image {
+    width: 80vh;
+    object-fit: cover;
+  }
+
+  #your-evoo-flex img {
+    width: 70vh;
+  }
+
+  #contact-us {
+    min-height: 130vh;
   }
 }
