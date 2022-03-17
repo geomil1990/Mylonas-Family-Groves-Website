@@ -32,6 +32,7 @@
     11.1 max-width:1280px
     11.2 max-width:768px
   12.Responsive for Smartphones 360px
+  13.Vertical media query
 */
 
 /* CSS declare variables */
@@ -59,6 +60,14 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+}
+
+.cl-line-heigth {
+  line-height: 25px;
+}
+
+.small-line-heigth {
+  line-height: 22px;
 }
 
 /*---------------- Navigation Bar ----------------*/
@@ -119,7 +128,7 @@ nav ul .nav-item:first-child {
 /*------------------------------------ Homepage ------------------------------------*/
 /*---------------- Welcome image ----------------*/
 #welcome {
-  background-image: url("/Mylonas-Family-Groves-Website/src/img/Milonas_land_illustration-04.svg");
+  background-image: url("../img/Milonas_land_illustration-04.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -585,7 +594,7 @@ nav ul .nav-item:first-child {
 }
 
 #flex-limited-edition div > img {
-  border-radius: 500px;
+  border-radius: 1000px;
   height: 50vh;
   object-fit: cover;
   opacity: 0;
@@ -638,7 +647,7 @@ nav ul .nav-item:first-child {
 
 /*---------------- The Estates ----------------*/
 #the-estates {
-  background-image: url(/Mylonas-Family-Groves-Website/src/img/car.jpg);
+  background-image: url(../img/car1.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -676,10 +685,14 @@ nav ul .nav-item:first-child {
 
 #manifesto div:first-child {
   margin-right: 100px;
+  margin-left: 3%;
 }
 
 #manifesto img {
-  width: 60vh;
+  width: 65vh;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-right: 3%;
   opacity: 0;
 }
 
@@ -987,20 +1000,23 @@ hr {
 }
 
 #our-land {
-  background-image: url(/Mylonas-Family-Groves-Website/src/img/village_only.jpg);
+  background-image: url(/Mylonas-Family-Groves-Website/src/img/land1.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+#our-land p:first-child {
+  margin-top: 2%;
+}
+
 #our-land > p {
-  margin-top: 1%;
-  width: 30%;
+  margin-top: 0.5%;
+  width: 40%;
   opacity: 0;
 }
 
@@ -2568,7 +2584,7 @@ textarea {
   }
 }
 
-/* Vertical media query*/
+/* Vertical media query */
 @media (max-height: 700px) {
   #welcome {
     min-height: 120vh;
