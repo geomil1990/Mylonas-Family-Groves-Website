@@ -62,11 +62,32 @@
       </div>
     </header>
 
-    <main>
+    <main id="contact-main">
+      <!-- Weather API-->
+      <div id="weather-box">
+        <div id="city-date">
+          <h3 id="Kyparissia"></h3>
+          <p id="date-time"></p>
+        </div>
+        <div id="weather-description-container">
+          <div>
+            <h4 id="live-temperature"></h4>
+            <p id="feels"></p>
+            <p id="humidity"></p>
+          </div>
+
+          <div id="description-icon-container">
+            <img id="weather-icon" src="" alt="" />
+            <p id="weather-description-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Us-->
       <section id="contact-us">
-        <div><h1>Drop Us a Line!</h1></div>
         <form id="contact-form" name="contact-form">
           <fieldset>
+            <div id="contact-header"><h1>Drop Us a Line!</h1></div>
             <!-- First name -->
             <div class="field-item">
               <label for="first-name">First name<span class="text-red">*</span></label>
@@ -114,24 +135,6 @@
           </fieldset>
         </form>
       </section>
-      <div id="weather-box">
-        <div id="city-date">
-          <h3 id="Kyparissia"></h3>
-          <p id="date-time"></p>
-        </div>
-        <div id="weather-description-container">
-          <div>
-            <h4 id="live-temperature"></h4>
-            <p id="feels"></p>
-            <p id="humidity"></p>
-          </div>
-
-          <div id="description-icon-container">
-            <img id="weather-icon" src="" alt="" />
-            <p id="weather-description-text"></p>
-          </div>
-        </div>
-      </div>
     </main>
     <!-- Footer -->
     <footer>
