@@ -119,14 +119,14 @@
         document.querySelectorAll("#products-main"),
         "characteristics-text",
         "move-right-characteristics-text",
-        -550,
+        -500,
         "pixels"
       );
       elementFromTop(
         document.querySelectorAll("#products-main"),
         "characteristics-image",
         "move-right-characteristics-image",
-        -350,
+        -450,
         "pixels"
       );
     }, 100),
