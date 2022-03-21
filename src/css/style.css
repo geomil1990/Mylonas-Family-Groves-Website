@@ -2787,8 +2787,32 @@ textarea {
     padding: 5% 10% 50% 10%;
   }
 
-  #contact-us {
-    height: 120vh;
+  #our-groves-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-gray);
+    padding-bottom: 20%;
+    color: var(--white);
+  }
+
+  #our-groves-container > div {
+    margin-top: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 50%;
+  }
+
+  #our-groves-container > div img {
+    width: 100%;
+    object-fit: cover;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  #contact-main {
+    height: 140vh;
   }
 
   #contact-form fieldset {
@@ -2864,9 +2888,5 @@ textarea {
   #natures-way {
     margin-left: 0%;
     font-size: 16px;
-  }
-
-  #contact-us {
-    min-height: 130vh;
   }
 }
