@@ -125,6 +125,10 @@ nav ul .nav-item:first-child {
 
 /*---------------- Navigation Bar End ----------------*/
 
+.border-radius-small {
+  border-radius: 5px;
+}
+
 /*------------------------------------ Homepage ------------------------------------*/
 /*---------------- Welcome image ----------------*/
 #welcome {
@@ -663,10 +667,6 @@ nav ul .nav-item:first-child {
   top: -25%;
 }
 
-#the-estates-text h2 {
-  margin-bottom: 1em;
-}
-
 /*---------------- Manifesto ----------------*/
 #manifesto {
   background-color: var(--black-gray);
@@ -683,14 +683,13 @@ nav ul .nav-item:first-child {
 
 #manifesto div:first-child {
   margin-right: 100px;
-  margin-left: 3%;
+  margin-left: 4%;
 }
 
 #manifesto img {
   width: 65vh;
   object-fit: cover;
-  border-radius: 2px;
-  margin-right: 3%;
+  margin-right: 4%;
   opacity: 0;
 }
 
@@ -707,26 +706,31 @@ nav ul .nav-item:first-child {
 #quality-awards {
   background-color: var(--gray);
   width: 100%;
-  height: 50vh;
+  height: 55vh;
 }
 
 #quality-awards-grid-container {
   padding-top: 5em;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
   color: var(--black);
   display: grid;
-  grid-column-gap: 15px;
+  grid-column-gap: 0%;
   grid-template-areas:
     "header header header header header header"
     "content content content content content content"
     "box-1 box-2 box-3 box-4 box-5 box-6";
+    
 }
 
 .item-award {
-  margin-bottom: 200px;
-  margin-top: 100px;
-  height: 50px;
+  margin-top: 25%;
+  justify-self: center;
+}
+
+.item-award img {
+  width: 150px;
+  height: 150px;
 }
 
 #quality-awards-header {
@@ -744,37 +748,31 @@ nav ul .nav-item:first-child {
 
 #box-1 {
   grid-area: box-1;
-  background-color: #770615;
   opacity: 0;
 }
 
 #box-2 {
   grid-area: box-2;
-  background-color: #9e9d24;
   opacity: 0;
 }
 
 #box-3 {
   grid-area: box-3;
-  background-color: #240655;
   opacity: 0;
 }
 
 #box-4 {
   grid-area: box-4;
-  background-color: #9e9d24;
   opacity: 0;
 }
 
 #box-5 {
   grid-area: box-5;
-  background-color: #24829e;
   opacity: 0;
 }
 
 #box-6 {
   grid-area: box-6;
-  background-color: #419e24;
   opacity: 0;
 }
 
@@ -885,16 +883,11 @@ hr {
   padding-bottom: 70px;
 }
 
-/* .headers-specs {
-  padding: 4vh;
-  text-align: center;
-  font-size: 42px;
-  font-weight: 1000;
-} */
 /*---------------- Our Family ----------------*/
 .headers-specs {
+  font-size: 36px;
   font-weight: 1000;
-  margin-bottom: 3%;
+  margin-bottom: 2vh;
 }
 
 #backround-our-family-container {
@@ -1036,20 +1029,21 @@ hr {
   flex-direction: column;
 }
 
-#our-land p:first-child {
-  margin-top: 2%;
+#our-land h1:first-child {
+  margin-top: 3.5%;
 }
 
 #our-land > h1 {
-  margin-top: 0.5%;
   width: 40%;
   opacity: 0;
 }
 
 #our-land > p {
-  margin-top: 0.5%;
   width: 40%;
   opacity: 0;
+}
+#our-land > p:last-child {
+  margin-top: 0.2%;
 }
 
 /*---------------- Meet Us ----------------*/
@@ -1058,8 +1052,9 @@ hr {
   text-align: center;
 }
 
-#backround-meet-us h2 {
-  background-color: var(--dark-gray);
+#meet-us-header {
+  padding-top: 3.5%;
+  margin-bottom: 0%;
 }
 
 #grid-meet-us {
@@ -1212,53 +1207,86 @@ hr {
 }
 
 /*---------------- Quality ----------------*/
-#quality div h2 {
-  position: relative;
-  color: var(--black);
-}
-
-#quality div h2::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url(../img/phenols.jfif);
-  background-position: center;
-  background-repeat: repeat;
-  opacity: 0.17;
-}
-
-#pooring-olive-oil {
-  padding: 2%;
+/* #pooring-olive-oil {
+  padding: 5vw 0 5vw 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--black-gray);
 }
 
-#pooring-olive-oil > p,
-#pooring-olive-oil img {
-  width: 40%;
-  opacity: 0;
-}
-
-#pooring-olive-oil > p {
-  margin-left: 2%;
-  margin-right: 6%;
+#pooring-olive-oil > div {
+  width: 40vw;
   color: var(--white);
 }
 
-#pooring-olive-oil > img {
-  margin-left: 6%;
-  margin-right: 2%;
+#pooring-olive-oil > div p,
+#pooring-olive-oil > div h1 {
+  margin-left: 4vw;
+  margin-right: 6vw;
+  color: var(--white);
+  opacity: 0;
 }
 
 .pooring-olive-image {
-  width: 40%;
+  width: 100%;
   max-height: 600px;
   object-fit: cover;
+  margin-left: 6vw;
+  margin-right: 4vw;
+  opacity: 0;
+} */
+
+/*---------------- Characteristics ----------------*/
+#quality-characteristics {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: repeat(2, auto);
+  background-color: var(--black-gray);
+  grid-row-gap: 10%;
+  grid-column-gap: 5%;
+  padding: 5% 3% 12% 3%;
+  justify-content: center;
+}
+
+.quality-characteristics-item {
+  color: var(--white);
+}
+
+#quality-characteristics div:nth-child(1) {
+  grid-column-start: 1/2;
+  grid-row-start: 1/2;
+}
+
+#quality-characteristics div:nth-child(2) {
+  grid-column-start: 2/3;
+  grid-row-start: 1/2;
+  align-self: center;
+}
+
+#quality-characteristics div:nth-child(3) {
+  grid-column-start: 1/2;
+  grid-row-start: 2/3;
+  align-self: center;
+}
+
+#quality-characteristics div:nth-child(4) {
+  grid-column-start: 2/3;
+  grid-row-start: 2/3;
+}
+
+#quality-characteristics div:nth-child(1) img,
+#quality-characteristics div:nth-child(4) img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pooring-olive-image,
+.quality-text,
+.characteristics-text,
+.characteristics-image {
+  opacity: 0;
 }
 
 .move-left-pooring-olive-image {
@@ -1299,57 +1327,6 @@ hr {
   }
 }
 
-/*---------------- Characteristics ----------------*/
-#characteristics div h2 {
-  position: relative;
-  color: var(--black);
-}
-
-#characteristics div h2::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url(../img/oil-drops-black.jpg);
-  background-position: center;
-  background-repeat: repeat;
-  opacity: 0.17;
-}
-
-#characteristics-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--gray);
-  padding: 2%;
-}
-
-#characteristics-container > p {
-  margin-top: 40px;
-  margin-right: 2%;
-  width: 40%;
-  max-height: 600px;
-  opacity: 0;
-}
-
-#characteristics-container > img {
-  width: 40%;
-  object-fit: cover;
-  margin-left: 2%;
-  opacity: 0;
-}
-
-.move-right-characteristics-text {
-  animation-name: moveRightCharacteristicsText;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
-}
-
 @keyframes moveRightCharacteristicsText {
   0% {
     transform: translateX(-100%);
@@ -1360,16 +1337,23 @@ hr {
     opacity: 1;
   }
 }
+.move-right-characteristics-text {
+  animation-name: moveRightCharacteristics-Image;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
 
 .move-right-characteristics-image {
-  animation-name: moveRightCharacteristicsImage;
+  animation-name: moveRightCharacteristics-Image;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
 
-@keyframes moveRightCharacteristicsImage {
+@keyframes moveRightCharacteristics-Image {
   0% {
     transform: translateX(-100%);
     opacity: 0;
@@ -1382,22 +1366,8 @@ hr {
 
 /*------------------------------------ Our Groves ------------------------------------*/
 /*---------------- From Our Groves to Your Table ----------------*/
-#our-groves div h2 {
-  position: relative;
-  color: var(--black);
-}
-
-#our-groves div h2::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url(../img/olive-groves-sea5.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.17;
+#our-groves-main {
+  overflow: hidden;
 }
 
 #our-groves-container {
@@ -1410,7 +1380,7 @@ hr {
   color: var(--white);
 }
 
-#our-groves-container > p {
+#our-groves-container > div {
   margin-top: 40px;
   margin-right: 2%;
   width: 40%;
@@ -1423,8 +1393,8 @@ hr {
   animation-fill-mode: forwards;
 }
 
-#our-groves-container > img {
-  width: 40%;
+#our-groves-container > div img {
+  width: 100%;
   object-fit: cover;
   margin-left: 2%;
   opacity: 0;
@@ -1439,7 +1409,7 @@ hr {
 /*---------------- Gallery ----------------*/
 #gallery {
   /* height: 85vh; */
-  background-color: var(--gray);
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1447,7 +1417,7 @@ hr {
 }
 
 #gallery h2 {
-  background-color: var(--dark-gray);
+  margin-top: 50%;
   color: var(--black);
   width: 100%;
 }
@@ -1616,7 +1586,6 @@ hr {
 /*----------------- Gallery's Pop Up Box -----------------*/
 
 #gallery-container-popup {
-  background-color: #8c7da5;
   height: 30em;
   width: 1000px;
   margin-top: 50px;
@@ -1630,7 +1599,6 @@ hr {
 }
 
 #gallery-image-popup {
-  background-color: #24829e;
   width: 960px;
   height: 500px;
 }
@@ -2328,7 +2296,6 @@ textarea {
   }
 
   #our-land > p {
-    margin-top: 0%;
     width: 35%;
     padding: 15px;
     opacity: 0;
@@ -2337,10 +2304,6 @@ textarea {
   #meets-us {
     background-color: var(--gray);
     text-align: center;
-  }
-
-  #backround-meet-us h2 {
-    background-color: var(--dark-gray);
   }
 
   #grid-meet-us {

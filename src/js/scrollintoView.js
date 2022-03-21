@@ -102,31 +102,31 @@
       elementFromTop(document.querySelectorAll("#quality-awards"), "item-award", "move-up-class", 500, "pixels");
       elementFromTop(document.querySelectorAll("#flex-our-vision"), "our-vision-image", "move-up-class", 400, "pixels");
       elementFromTop(document.querySelectorAll("#flex-our-vision"), "our-vision-txt", "move-up-class", 250, "pixels");
-      elementFromTop(document.querySelectorAll("#backround-our-land"), "our-land", "move-down-class", 200, "pixels");
+      elementFromTop(document.querySelectorAll("#our-land"), "our-land", "move-down-class", 200, "pixels");
       elementFromTop(document.querySelectorAll("#meets-us"), "george", "move-right-george", 400, "pixels");
       elementFromTop(document.querySelectorAll("#meets-us"), "giouli", "move-right-giouli", 400, "pixels");
       elementFromTop(document.querySelectorAll("#meets-us"), "jim", "move-right-jim", 400, "pixels");
       elementFromTop(document.querySelectorAll("#meets-us"), "sakis", "move-right-sakis", 400, "pixels");
       elementFromTop(
-        document.querySelectorAll("#quality"),
+        document.querySelectorAll("#products-main"),
         "pooring-olive-image",
         "move-left-pooring-olive-image",
-        100,
+        400,
         "pixels"
       );
-      elementFromTop(document.querySelectorAll("#quality"), "quality-text", "move-left-quality-text", 100, "pixels");
+      elementFromTop(document.querySelectorAll("#products-main"), "quality-text", "move-left-quality-text", 200, "pixels");
       elementFromTop(
-        document.querySelectorAll("#characteristics"),
+        document.querySelectorAll("#products-main"),
         "characteristics-text",
         "move-right-characteristics-text",
-        100,
+        -550,
         "pixels"
       );
       elementFromTop(
-        document.querySelectorAll("#characteristics"),
+        document.querySelectorAll("#products-main"),
         "characteristics-image",
         "move-right-characteristics-image",
-        100,
+        -350,
         "pixels"
       );
     }, 100),
