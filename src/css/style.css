@@ -2469,12 +2469,12 @@ textarea {
     margin: 15px 2vw 0vw 4vw;
   }
 
+  #presentation-EVOO {
+    height: 90vh;
+  }
+
   #presentation-EVOO-container {
-    color: rgb(232, 235, 238);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 70vh;
+    height: 100vh;
   }
 
   #flex-limited-edition {
@@ -2482,12 +2482,27 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15%;
+    flex: 0 1 auto;
+    position: absolute; /* new */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20%;
+  }
+
+  #flex-limited-edition div > img {
+    border-radius: 1000px;
+    height: 30vh;
+    object-fit: cover;
+    opacity: 0;
+  }
+
+  #flex-limited-edition div > p {
+    margin-top: 2em;
   }
 
   #flex-limited-edition div > img {
     border-radius: 500px;
-    height: 25vh;
+    height: 15vh;
     object-fit: cover;
     margin-top: 4em;
   }
@@ -2522,6 +2537,7 @@ textarea {
 
   #manifesto {
     flex-direction: column;
+    height: 130vh;
   }
 
   #manifesto div {
@@ -2533,8 +2549,9 @@ textarea {
   }
 
   #manifesto img {
-    margin-top: 22vh;
-    height: 200px;
+    margin-top: 5vh;
+    height: 100%;
+    width: 80%;
     object-fit: cover;
   }
 
@@ -2544,7 +2561,48 @@ textarea {
   }
 
   #manifesto-test-right {
-    margin-bottom: 15em;
+    margin-bottom: 5vh;
+  }
+
+  #the-estates {
+    height: 140vh;
+  }
+
+  #the-estates-text {
+    width: 100%;
+    opacity: 0;
+    position: relative;
+    left: 2.5%;
+    top: -15%;
+  }
+
+  #quality-awards {
+    background-color: var(--gray);
+    width: 100%;
+    height: 80vh;
+  }
+
+  #quality-awards-grid-container {
+    padding: 2%;
+    grid-column-gap: 15px;
+  }
+
+  .item-award {
+    margin-bottom: 0px;
+    margin-top: 15px;
+    height: 50px;
+    opacity: 0;
+  }
+
+  #quality-awards-header {
+    grid-area: header;
+    justify-self: center;
+    margin-bottom: 15px;
+  }
+
+  #quality-awards-content {
+    margin-bottom: 15px;
+    text-align: center;
   }
 
   #grid-footer {
@@ -2573,42 +2631,75 @@ textarea {
   }
 
   #backround-our-family-container {
-    height: 100vh;
+    height: 160vh;
   }
 
-  #backround-our-family-container div:nth-child(1) {
-    margin-bottom: 0px;
-    margin-top: 20px;
+  #backround-our-family-container > div {
+    width: 80%;
   }
 
-  #backround-our-family-container div:nth-child(2) {
+  #backround-our-family-container > div:first-child {
+    margin-right: 0%;
     margin-left: 0%;
-    width: 100%;
+    margin-bottom: 15%;
   }
 
-  #backround-our-family-container div:nth-child(2) img {
-    width: 100%;
+  #backround-our-family-container > div:last-child {
+    margin-right: 0%;
+    margin-left: 0%;
   }
 
-  #grid-our-vision {
-    grid-row-gap: 20px;
-    height: 100vh;
-  }
-
-  #grid-our-vision div:first-child {
-    width: 100%;
-    margin-left: 17%;
-  }
-
-  #grid-our-vision div:first-child img {
-    width: 70%;
+  #backround-our-family-container > div img {
+    max-height: 200px;
+    width: 80%;
     object-fit: cover;
   }
 
-  #grid-our-vision div:last-child {
-    width: 70%;
-    margin-left: 15%;
-    margin-bottom: 70px;
+  #flex-our-vision {
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  #flex-our-vision > div {
+    width: 80%;
+  }
+
+  #flex-our-vision > div:first-child {
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 8%;
+  }
+
+  #flex-our-vision > div:last-child {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+
+  #flex-our-vision > div img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #our-land {
+    height: 140vh;
+  }
+
+  #our-land h1:first-child {
+    margin-top: 3.5%;
+  }
+
+  #our-land > h1 {
+    width: 50%;
+    opacity: 0;
+  }
+
+  #our-land > p {
+    width: 50%;
+    opacity: 0;
+  }
+  #our-land > p:last-child {
+    margin-top: 0.2%;
   }
 
   #our-land {
@@ -2616,7 +2707,7 @@ textarea {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2692,6 +2783,10 @@ textarea {
     object-fit: cover;
   }
 
+  #quality-characteristics-products {
+    padding: 5% 10% 50% 10%;
+  }
+
   #contact-us {
     height: 120vh;
   }
@@ -2721,7 +2816,7 @@ textarea {
   }
 
   #flex-limited-edition div > img {
-    min-height: 50vh;
+    min-height: 35vh;
   }
 
   #the-estates {
@@ -2749,7 +2844,7 @@ textarea {
   }
 
   #backround-our-family-container div:nth-child(2) img {
-    width: 85vh;
+    width: 40vh;
     object-fit: cover;
   }
 
@@ -2763,7 +2858,12 @@ textarea {
   }
 
   #your-evoo-flex img {
-    width: 70vh;
+    width: 30vh;
+  }
+
+  #natures-way {
+    margin-left: 0%;
+    font-size: 16px;
   }
 
   #contact-us {
